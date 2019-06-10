@@ -1,0 +1,51 @@
+<html>
+<head></head>
+<body>
+<form   method="post" id="imginsert" enctype="multipart/form-data" name="image_form" action="" >
+    <h2>Upload photos and the item you are looking for: </h2>
+    <hr style="width: auto; height:auto;" /><br />
+    <b>Upload photos :</b><br /><br />
+    <table style="color: #003D7A; font-family: 'Lily Script One', helveti;">
+    <tr>
+	    <td><b>Main&nbsp;Photo:<sup>*</sup></b></td>
+        <td><input type="file" id="image" name="image"  accept="image/*" required="true" /> </td>
+        <td>(upload main photo for your ad)</td>
+    </tr>
+    </table>
+    <input type="submit" name="submit" id="submit" value="Upload Image"/>
+</form>
+
+<?php
+ global $wpdb;
+if(isset($_FILES['image']))
+    {
+         $imagename=basename($_FILES['image']['name']);
+         $imag_tmp=$_FILES['image']['tmp_name'];
+         //$dir='images';
+		 $dir = dirname($_SERVER["SCRIPT_FILENAME"])."/images/slider/".$member_id."/".$image;
+    unlink($path);
+         if(move_uploaded_file($imag_tmp,$dir."/". $imagename))
+         {
+             echo "file uploaded succesfully";
+         }
+ else {
+     echo "file not uploaded succesfully";
+ }
+ if(is_dir($path)==false)
+       {
+         mkdir("$path", 0777);
+       }
+      $ext = pathinfo($imagename, PATHINFO_EXTENSION);
+	  $path='http://wpdemo.superbcart.com/magnum-honda/wp-content/plugins/Tlcmodeling/images/tlcmodlingimage/thumb/';
+       move_uploaded_file($imag_tmp,"$path/"."Main.".$ext);
+       //here Main is name i am giving for image to store in db 
+       $imagepath="$path/".'\\\\'.$imagename;
+       $query="INSERT into what_we_do (`image1`) VALUES('$imagepath')";
+       $result=mysql_query($query);
+       if($result)
+       {
+        echo " inserted successfully";
+       }
+    }
+
+?>

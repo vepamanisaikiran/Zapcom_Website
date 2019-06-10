@@ -1,0 +1,206 @@
+<?php 
+/*
+Template Name: Contact Us
+ */?>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Contact | Zapcom</title>
+
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<!---meta name="author" content="Design by - GIJEESH M M (gijeesh@channelsoftech.com)"---->
+
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style-1.css"> 
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/media-query.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
+
+<!--<link href="css/responsive-tabs.css" rel="stylesheet" type="text/css" media="all" />-->
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/jquery.bxslider.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/jss/js/responsive-tabs.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<link href="<?php bloginfo('template_url'); ?>/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo('template_url'); ?>/SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo('template_url'); ?>/SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<?php
+/**
+ * This hook is important for wordpress plugins and other many things
+ */
+wp_head();
+?>
+</head>
+
+<body <?php body_class(); ?>>
+	<div id="" class="">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="inner-wrap">
+				<div class="hgroup-wrap clearfix">
+					<div class="site-branding">
+						<?php if( ( of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'logo_only' ) && of_get_option( 'esteem_header_logo_image', '' ) != '' ) {
+						?>
+							<div class="header-logo-image">
+								<a rel="home" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<img alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" src="<?php echo of_get_option( 'esteem_header_logo_image', '' ); ?>">
+	</a>
+							</div><!-- .header-logo-image -->
+						<?php }
+						if( of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'text_only' ) {
+						?>
+							<div class="header-text">
+								<h1 id="site-title">
+										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+											<?php bloginfo( 'name' ); ?>
+										</a>
+									</h1>
+								<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+							</div><!-- .header-text -->
+						<?php } ?>
+					</div><!-- .site-branding -->
+					<div class="hgroup-wrap-right">
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<h3 class="menu-toggle"></h3>
+							<div class="nav-menu clearfix">
+								<?php
+									if ( has_nav_menu( 'primary' ) ) {
+											wp_nav_menu( array( 'theme_location' => 'primary',
+																'container' => false
+																 ) );
+									}
+									else {
+											wp_page_menu();
+									}
+								?>
+							</div><!-- .nav-menu -->
+						</nav>
+						</div><!-- .hgroup-wrap-right -->
+				</div><!-- .hgroup-wrap -->
+			</div><!-- .inner-wrap -->
+			<?php //esteem_render_header_image(); ?>
+
+			<?php
+   		
+		   	if( !( is_front_page()) ) { ?>
+			<!--	<section class="page-title-bar clearfix">
+					<div class="inner-wrap">
+						<?php //if( '' != esteem_header_title() ) { ?>
+							<div class="page-title-wrap"><h1><?php //echo esteem_header_title(); ?></h1></div>
+						<?php //} ?>
+						<?php //if( function_exists( 'esteem_breadcrumb' ) ) { esteem_breadcrumb(); } ?>
+					</div>
+				</section>-->
+			<?php } ?>
+		</header>
+		<section class="banner">
+<?php 
+ /*global $wpdb;
+ $sql = "SELECT * FROM `wp_career_career_banner`";
+ $sqll=$wpdb->get_results($sql);
+ ?>
+ 
+ <?php 
+foreach($sqll as $post_name){
+*/
+?>
+
+<!-- <div class="banner-img-pos carrer-b"> <img src="http://wpdemo.superbcart.com/magnum-honda//wp-admin/<?php /*echo $post_name ->career_banner */?>"/> </div>-->
+<div class="banner-img-pos carrer-b"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/career-banner.jpg" /></div>
+<div class="container">
+<div class="banner-cnt career-b"> 
+  <p>Connect with us, and let us know how we can help </p>
+   </div>
+
+</div>
+
+</section>
+<section class="section-3" id="whoweare">
+<div class="container">
+<div class="static-tab-whowr">
+<div class="whowr-tab1"> <h4 class="cont-head"> Sales</h4>
+<div class="img-stat"> <span ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/contact-img1.jpg" /> </span> </div>
+<p class="cont-para">We’d love to talk on how we can work together.</p>
+  </div>
+  
+<div class="whowr-tab1"> <h4 class="cont-head">Startup Support </h4>
+<div class="img-stat"> <span ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/contact-img2.jpg" /> </span> </div>
+ <p class="cont-para">Got your lightbulb moment? Speak to us quickly!</p>
+ </div>
+  
+<div class="whowr-tab1"> <h4 class="cont-head" > Contact Us </h4>
+<div class="img-stat"> <span > <img src="<?php bloginfo('stylesheet_directory'); ?>/images/contact-img3.jpg" /></span> </div>
+  <p class="cont-para">Any other queries or just to say hello </p>
+  </div>
+  
+</div>
+
+
+
+</div>
+</section> 
+
+<section class="contact-sec3">
+  
+  <h3 class="cont-sec3-head">Latest News</h3>
+  <h5 class="conct-sec-social">Connect with us for announcements and updates <span > <img src="<?php bloginfo('stylesheet_directory'); ?>/images/contact-social1.jpg" /></span>@Zapcom <span > <img src="<?php bloginfo('stylesheet_directory'); ?>/images/contact-social2.jpg" /></span>Zapcom</h5>
+    <div class="contact-nation-wrap"><div class="contact-nation">
+    <span class="cont-india"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/contact-nat1.jpg" />India</span>
+  <span class="cont-india"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/contact-nat2.jpg" />United States</span>
+    </div></div>
+</section>
+
+<section class="footer">
+<div class="container">
+
+<div class="fot-1">
+<p> <span class="call-spt"> </span> </p>
+<p> CALL US <br> INDIA: +91-80-67232300  <br>  USA: +1-925-350-7003 </p>
+</div>
+
+<div class="fot-1">
+<div class="center-fot">
+<p> <span class="mail-spt"> </span> </p>
+<p style="margin: 11px 0 0 0;"> MAIL US <br> info@zapcg.com </p>
+</div>
+</div>
+
+<div class="fot-1 shr">
+<div class="center-fot">
+<p> <span class="face-spt"> </span>
+<span class="tweet-spt"> </span>
+<span class="gogl-spt"> </span>
+<span class="linkin-spt"> </span>
+ </p>
+</div>
+</div>
+
+</div>
+</section>   <!---  section footer ---->
+
+<section class="copy-rt">
+<div class="container">
+
+<div class="copy-cnt">  © 2015 Zapcom Group. All Right Reserved  |  Privacy Policy </div>
+
+</div>
+</section>
+
+
+</div> <!-- wrapper -->
+
+
+<script type="text/javascript">
+<!--var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");-->
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1",{contentIsOpen:false, duration:200});
+</script>
+</body>
+</html>

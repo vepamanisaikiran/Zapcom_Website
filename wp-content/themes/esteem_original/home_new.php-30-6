@@ -1,0 +1,341 @@
+<?php
+/*
+Template Name:HOME
+*/
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style-1.css"> 
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/media-query.css">
+
+<link href="<?php bloginfo('template_directory'); ?>/css/responsive-tabs.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="<?php bloginfo('template_url'); ?>/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="<?php bloginfo('template_url'); ?>/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jss/responsive-tabs.min.js" type="text/javascript"></script>
+
+<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && 
+
+location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+
+
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<?php
+/**
+ * This hook is important for wordpress plugins and other many things
+ */
+wp_head();
+?>
+</head>
+
+<body <?php body_class(); ?>>
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="inner-wrap">
+				<div class="hgroup-wrap clearfix">
+					<div class="site-branding">
+						<?php if( ( of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'logo_only' ) && of_get_option( 'esteem_header_logo_image', '' ) != '' ) {
+						?>
+							<div class="header-logo-image">
+								<a rel="home" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<img alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" src="<?php echo of_get_option( 'esteem_header_logo_image', '' ); ?>">
+	</a>
+							</div><!-- .header-logo-image -->
+						<?php }
+						if( of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'text_only' ) {
+						?>
+							<div class="header-text">
+								<h1 id="site-title">
+										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+											<?php bloginfo( 'name' ); ?>
+										</a>
+									</h1>
+								<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+							</div><!-- .header-text -->
+						<?php } ?>
+					</div><!-- .site-branding -->
+					<div class="hgroup-wrap-right">
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<h3 class="menu-toggle"></h3>
+							<div class="nav-menu clearfix">
+								<?php
+									if ( has_nav_menu( 'primary' ) ) {
+											wp_nav_menu( array( 'theme_location' => 'primary',
+																'container' => false
+																 ) );
+									}
+									else {
+											wp_page_menu();
+									}
+								?>
+							</div><!-- .nav-menu -->
+						</nav><!-- #site-description -->
+						<!--<i class="icon-search search-top"></i>
+						<div class="search-form-top">
+							<?php //get_search_form(); ?>
+						</div>--><!-- .search-form-top -->
+					</div><!-- .hgroup-wrap-right -->
+				</div><!-- .hgroup-wrap -->
+			</div><!-- .inner-wrap -->
+			<?php //esteem_render_header_image(); ?>
+
+			<?php
+   		
+		   	if( !( is_front_page()) ) { ?>
+			<!--	<section class="page-title-bar clearfix">
+					<div class="inner-wrap">
+						<?php //if( '' != esteem_header_title() ) { ?>
+							<div class="page-title-wrap"><h1><?php //echo esteem_header_title(); ?></h1></div>
+						<?php //} ?>
+						<?php //if( function_exists( 'esteem_breadcrumb' ) ) { esteem_breadcrumb(); } ?>
+					</div>
+				</section>-->
+			<?php } ?>
+		</header><!-- #masthead -->
+		<div id="main" class="site-main inner-wrap">
+
+
+<section class="banner">
+
+
+ <div class="banner-img-pos"> <img src="<?php bloginfo('template_url'); ?>/images/banner.jpg"> </div>
+<div class="container">
+<div class="banner-cnt"> <p class="p-cnt">Great ideas and great people lead to great products. </p>
+  <div class="sme-cnt">
+    <div class="zap"> <p style="">@Zapcom... </p> </div>
+    <div class="ban-pts"> <p> <span class="build-sp"> </span> We build innovative products. </p> 
+    <p> <span class="idea-sp"> </span> You have an idea, we help you scale it to a product. </p>  </div>
+  </div>
+  
+  <h2 class="h2-bnnr">WHAT DO YOU WANT TO DO?</h2>
+  
+  <div class="btns-bnnr">
+  <p> <a href="#" class="btn-prd btn-primary"> Product Engineering</a>  <a href="#" class="btn-strt btn-success">Startup Support  </a>  </p>
+</div>
+
+</div>
+<div class="img-dwn"> <a href="#whoweare"> <span class="dwn-sprt"> </span> </a> </div>
+
+</div>
+
+</section> <!--- banner section ---->
+
+<section class="section-2" id="whoweare">
+<div class="container">
+<h2 class="head-sec"> Who we are </h2>
+<h3 class="cnt-hd-sec">Your trusted partner for Incubating Innovative Ideas, Sourcing, building  solutions and Go-To market strategy </h3>
+
+<p class="cnt-sec"> ZapCom has a Strong Leadership team with 20+ years of Global experience in Product Engineering and E2E Consulting. We have a proven set of execution  capabilities in developing and managing Global Products in an Offshore-Onshore delivery model.   </p>
+
+<div class="btn-sec"> <a href="#" class="btn btn-primary"> <span class="hiring-img-1"> </span> We are hiring </a> </div>
+
+</div>
+</section> <!---  section 2 ---->
+
+<section class="section-3">
+<div class="container">
+<h2 class="head-sec"> What we do </h2>
+
+<!--<div class="responsive-tabs-default">
+
+<ul class="responsive-tabs">
+				<li><a href="#example-1-tab-1" target="_self"> <span class="hiring-img"> </span> Product and IP Building <span class="actve-img"> </span> </a></li>
+				<li><a href="#example-1-tab-2" target="_self" style="width: 82%;"> <span class="hiring-img-2"> </span> Standing up Start-up  Ideas <span class="actve-img"> </span> </a></li>
+				<li><a href="#example-1-tab-3" target="_self"> <span class="hiring-img-3"> </span> Product Engineering Services <span class="actve-img"> </span> </a></li>
+			</ul>
+
+<div class="responsive-tabs-content bm-larger">
+				<div id="example-1-tab-1" class="responsive-tabs-panel">
+					<div class="responsive-tab-title"></div>
+ <div class="slide-tab-img"> <img src="images/tab-main1.png"> </div>
+					 <div class="tab-cntnts"> <h3 class="cnt-hd-sec">Transforming ideas into viable products </h3>
+<p class="cnt-sec">At ZapCom we are passionate about building immensely productive and amazing products focused in the areas of Hospitality and Retail. </p>
+					</div>
+				</div>
+			
+            <div id="example-1-tab-2" class="responsive-tabs-panel">
+					<div class="responsive-tab-title"></div>
+ <div class="slide-tab-img"> <img src="images/tab-main1.png"> </div>
+					 <div class="tab-cntnts"> <h3 class="cnt-hd-sec">Standing up Start-up  Ideas </h3>
+<p class="cnt-sec">At ZapCom we are passionate about building immensely productive and amazing products focused in the areas of Hospitality and Retail. </p>
+					</div>
+				</div>
+                
+				<div id="example-1-tab-3" class="responsive-tabs-panel">
+					<div class="responsive-tab-title"></div>
+ <div class="slide-tab-img"> <img src="images/tab-main1.png"> </div>
+					 <div class="tab-cntnts"> <h3 class="cnt-hd-sec">  Product Engineering Services</h3>
+<p class="cnt-sec">At ZapCom we are passionate about building immensely productive and amazing products focused in the areas of Hospitality and Retail. </p>
+					</div>
+				</div>
+                
+			</div>
+
+</div>-->  <!--- tabs - div ---->
+
+
+<div id="TabbedPanels1" class="TabbedPanels">
+  <ul class="TabbedPanelsTabGroup">
+    <li class="TabbedPanelsTab" tabindex="0"> <p class="cntr-tab1">  <span class="hiring-img"> </span> Product and IP Building  <span class="actve-img"> </span> </p> </li>
+    <li class="TabbedPanelsTab" tabindex="0"> <p class="cntr-tab2"> <span class="hiring-img-2"> </span> Standing up Start-up  Ideas  <span class="actve-img"> </span> </p>  </li>
+    <li class="TabbedPanelsTab" tabindex="0">  <p class="cntr-tab3"><span class="hiring-img-3"> </span> Product Engineering Services <span class="actve-img"> </span> </p>  </li>
+  </ul>
+  <div class="TabbedPanelsContentGroup">
+    <div class="TabbedPanelsContent">  
+     <div class="slide-tab-img"><img src="<?php bloginfo('template_url'); ?>/images/tab-main1.png"> </div>
+					 <div class="tab-cntnts"> <h3 class="cnt-hd-sec">Transforming ideas into viable products </h3>
+<p class="cnt-sec">At ZapCom we are passionate about building immensely productive and amazing products focused in the areas of Hospitality and Retail. </p> </div>
+</div>
+
+    <div class="TabbedPanelsContent">  
+     <div class="slide-tab-img"><img src="<?php bloginfo('template_url'); ?>/images/index.png"> </div>
+					 <div class="tab-cntnts"> <h3 class="cnt-hd-sec"> Standing up Start-up  Ideas </h3>
+<p class="cnt-sec">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta feugiat urna vitae interdum. Sed sed nisi sed libero pharetra finibus. </p> </div>
+</div>
+
+    
+    <div class="TabbedPanelsContent">  
+     <div class="slide-tab-img"><img src="<?php bloginfo('template_url'); ?>/images/index-1.png"> </div>
+					 <div class="tab-cntnts"> <h3 class="cnt-hd-sec">  Product Engineering Services </h3>
+<p class="cnt-sec">Quisque lacinia, tellus ac lobortis rutrum, ex lacus porta dolor, eu aliquam est lacus eget lorem. Sed rutrum viverra tortor id tincidunt. In eget ultrices mi.</p> </div>
+</div>
+
+  </div>
+</div>
+
+
+</div>
+</section> <!---  section 3 ---->
+
+
+<section class="section-3 sec4">
+<h2 class="head-sec"> Our Solutions </h2>
+
+<div class="sol-img-1">  <div class="poss-img">  <img src="<?php bloginfo('template_url'); ?>/images/hospital1.jpg"></div> 
+  <div class="poss-img-cnt">  
+      <div class="container">  
+     <h4 class="hd-img"> Hospitality</h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus sit amet metus rutrum ornare a eget mauris. <br>  <br> 
+  <!-- <span class="arrow-rnd"> </span>-->  </p>  
+   </div> </div>
+   
+   <div class="item_description1">     
+   <div class="mouser-cnt">
+    <h4 class="hd-img" style="color: #fff;"> Hospitality </h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus sit amet metus rutrum ornare a eget mauris.   </p>
+	  </div>
+      <p class="center-img-spt" style="margin: 0;">  <span class="arrow-rnd"> </span> </p> 
+      <div class="fade">	</div>
+                  </div>
+</div>
+
+
+<div class="sol-img-2">  
+<div class="poss-img">  <img src="<?php bloginfo('template_url'); ?>/images/cruise-img.jpg"></div> 
+  <div class="poss-img-cnt">  <div class="">  
+     <h4 class="hd-img">Hospitality</h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus sit amet metus rutrum ornare a eget mauris.   </p>  
+   </div> </div>
+   
+   <div class="item_description1"> 
+   <div class="mouser-cnt sol-2">
+    <h4 class="hd-img" style="color: #fff;"> Hospitality </h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus sit amet metus rutrum ornare a eget mauris. </p>
+					<p class="center-img-spt">  <span class="arrow-rnd"> </span> </p>
+				  </div>
+                   <div class="fade sol-m2">	</div>
+                  </div>
+</div>
+<div class="sol-img-2 rtg"> 
+ <div class="poss-img">  <img src="<?php bloginfo('template_url'); ?>/images/travel-img.jpg"></div> 
+  <div class="poss-img-cnt">  <div class="">  
+     <h4 class="hd-img"> Hospitality</h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus sit amet metus rutrum ornare a eget mauris.  </p>  
+   </div> </div>
+   
+   <div class="item_description1"> 
+   <div class="mouser-cnt sol-2">
+    <h4 class="hd-img" style="color: #fff;"> Hospitality </h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tellus sit amet metus rutrum ornare a eget mauris. </p>
+					<p class="center-img-spt">  <span class="arrow-rnd"> </span> </p>
+				  </div>
+                   <div class="fade sol-m3">	</div>
+                  </div>
+                  
+</div>
+
+</section> <!---  section 4 ---->
+
+<section class="footer">
+<div class="container">
+
+<div class="fot-1">
+<p> <span class="call-spt"> </span> </p>
+<p> CALL US <br> INDIA: +91-80-67232300  <br>  USA: +1-925-350-7003 </p>
+</div>
+
+<div class="fot-1">
+<div class="center-fot">
+<p> <span class="mail-spt"> </span> </p>
+<p style="margin: 11px 0 0 0;"> MAIL US <br> info@zapcg.com </p>
+</div>
+</div>
+
+<div class="fot-1 shr">
+<div class="center-fot">
+<p> <span class="face-spt"> </span>
+<span class="tweet-spt"> </span>
+<span class="gogl-spt"> </span>
+<span class="linkin-spt"> </span>
+ </p>
+</div>
+</div>
+
+</div>
+</section>   <!---  section footer ---->
+
+<section class="copy-rt">
+<div class="container">
+
+<div class="copy-cnt">  © 2015 Zapcom Group. All Right Reserved  |  Privacy Policy </div>
+
+</div>
+</section>
+
+
+</div> <!-- wrapper -->
+
+
+</body>
+
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+
+<script src="js/bootstrap.min.js"> </script>
+<script src="js/jquery.min.js"> </script>
+
+

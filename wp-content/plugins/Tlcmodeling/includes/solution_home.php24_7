@@ -1,0 +1,62 @@
+<html><head></head>
+<body>
+<form enctype="multipart/form-data" action="" method="post">
+<table>
+<tr><td>GROUP NAME:<input type="text" name="grp_name" ></td></tr>
+<tr><td><label>Image<br/>(jpg/png/gif) </label><br/>
+<input type="file" id="image1" name="image1" /><br/>
+<input type="file" id="image2" name="image2" /><br/>
+<input type="file" id="image3" name="image3" /><br/>
+<input type="file" id="image4" name="image4" /><br/>
+<input type="file" id="image5" name="image5" />
+</td>
+</tr></table>
+<input type="submit" id="editcategory" name="editcategory" value="Submit"/>
+</form>
+<?php
+global $wpdb;
+if(isset($_POST['editcategory']))
+{
+	$grp_name=$_POST['grp_name'];
+	extract($_REQUEST);
+$path=ABSPATH.'wp-content/plugins/Tlcmodeling/images/';
+$name1= $_FILES['image1']['name'];
+		$filename1=explode('.',$name1);
+        $name1=(time()+1).'.'.$filename1[1];
+		$type1= $_FILES["image1"]["type"];		
+		$tmp_name1= $_FILES["image1"]["tmp_name"];
+		////////////////////////////////////////////////////
+		$name2= $_FILES['image2']['name'];
+		$filename2=explode('.',$name2);
+        $name2=(time()+2).'.'.$filename2[1];
+		$type2= $_FILES["image2"]["type"];		
+		$tmp_name2= $_FILES["image2"]["tmp_name"];
+		////////////////////////////////////////////////////
+		$name3= $_FILES['image3']['name']; 
+		$filename3=explode('.',$name3);
+        $name3=(time()+3).'.'.$filename3[1];	
+		$type3= $_FILES["image3"]["type"];		
+		$tmp_name3= $_FILES["image3"]["tmp_name"];
+		////////////////////////////////////////////////////
+		$name4= $_FILES['image4']['name']; 
+		$filename4=explode('.',$name4);
+        $name4=(time()+4).'.'.$filename4[1];	
+		$type4= $_FILES["image4"]["type"];		
+		$tmp_name4= $_FILES["image4"]["tmp_name"];
+          
+		////////////////////////////////////////////////////
+		$name5= $_FILES['image5']['name']; 
+		$filename5=explode('.',$name5);
+        $name5=(time()+5).'.'.$filename5[1];	
+		$type5= $_FILES["image5"]["type"];		
+		$tmp_name5= $_FILES["image5"]["tmp_name"];
+		$sql="INSERT into images (`group_name`,`image1`,`image2`,`image3`,`image4`,`image5`) VALUES('$grp_name','$image1','$image2','$image3','$image4','$image5')";
+$sqll=$wpdb->get_results($sql);
+ move_uploaded_file($tmp_name1,$path.$name1);
+move_uploaded_file($tmp_name2,$path.$name2);
+move_uploaded_file($tmp_name3,$path.$name3);
+move_uploaded_file($tmp_name4,$path.$name4);
+move_uploaded_file($tmp_name5,$path.$name5);
+}
+?>
+</body></html>

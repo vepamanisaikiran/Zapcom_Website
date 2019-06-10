@@ -1,0 +1,70 @@
+#mainf
+{
+	
+	  position: fixed;
+ right: 5px;
+  bottom: 1vh;
+
+
+  width: 150px;
+  height: 100px;
+
+  margin-top: 60px;
+
+  
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 20px;
+
+	
+}
+
+#control
+{
+	margin-top:-30px;
+	bottom:10px;
+}
+#one{
+
+	height:26px;
+	width:30px;
+
+	float:right;
+
+margin-top:40px;
+
+}
+
+
+
+
+#feedback-tab {
+
+
+
+
+
+float: right;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 107px;
+  height: 100px;
+  background-color: rgba(0, 0, 0,0.8);
+
+  padding-top: 5px;
+  
+  
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+/* border-radius: 20px;
+border-color: black;  */
+
+}
+
+#feedback-tab:hover { background-color: #194273; }
+
+#feedback-form textarea { resize: none; }
+

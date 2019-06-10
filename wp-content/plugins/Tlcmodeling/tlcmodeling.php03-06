@@ -1,0 +1,85 @@
+<?php /*
+	Plugin Name: TLC Modeling
+	Description:  TLC Model Management
+	Version: 1.0
+	Author:Meenu Saini
+	Author URI: www.newindiasolutions.com
+	License:  free
+	*/
+	@session_start();
+	@include_once( ABSPATH.'/wp-load.php' );
+	
+	
+	function registerfile()
+		{
+			//wp_register_style( 'my-style1', '/wp-content/plugins/Product/css/responsive.css' );
+			// wp_enqueue_style('my-style1');
+			wp_register_style( 'ab-libvote', '/wp-content/plugins/testmonial/css/ab_library.css' );
+			//wp_enqueue_style('ab-libvote');
+			//wp_register_style( 'my-stylevote', '/wp-content/plugins/votemanagement/css/custom.css' );
+			//wp_enqueue_style('my-stylevote');
+			wp_enqueue_script('myscriptvote1', 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', array('scriptaculous') );
+			wp_enqueue_script('myscriptvote11', 'http://code.jquery.com/jquery-1.8.3.min.js', array('scriptaculous') );
+			//wp_enqueue_script('myscriptvote', '/wp-content/plugins/product/js/custom_vote.js', array('scriptaculous') );
+			//wp_enqueue_script('myscriptvote3', '/wp-content/plugins/testmonial/js/ab_library.js', array('scriptaculous') );
+			//wp_enqueue_script('myscriptvote4', '/wp-content/plugins/testmonial/js/ajax-methord.js', array('scriptaculous') );
+			//wp_enqueue_script('myscriptvote4', '/wp-content/plugins/testmonial/js/validation.js', array('scriptaculous') );
+			//wp_enqueue_script('myscriptvote4', '/wp-content/plugins/testmonial/js/cartrelated.js', array('scriptaculous') );
+ 			//wp_enqueue_script('myscriptvote5', '/wp-content/plugins/testmonial/js/jscolor.js', array('scriptaculous') );
+			
+		}
+	add_action('init', 'registerfile');
+	
+	function Tlcmodeling_Management()
+		{              // title,name,role,id,fucntion()
+		
+		add_menu_page('Tlcmodeling','Tlcmodeling','administrator','Tlcmodeling_Book','TlcmodelingManagement');
+		add_submenu_page('Tlcmodeling_Book','Booking Reguest','Add Booking','administrator','add_booking','AddBooking');
+		add_submenu_page('Tlcmodeling_Book','Manage Booking','Manage Booking','administrator','manage_booking','ManageBooking');
+		add_submenu_page('Tlcmodeling_Book','','','administrator','edit_booking','EditBooking');		
+		add_submenu_page('Tlcmodeling_Book','Become Model','Add Model','administrator','add_model','AddModel');
+		add_submenu_page('Tlcmodeling_Book','Manage Model','Manage Model','administrator','manage_model','ManageModel');
+		add_submenu_page('Tlcmodeling_Book','','','administrator','edit_model','EditModel');               
+		
+		}
+	add_action('admin_menu', 'Tlcmodeling_Management');
+	function TlcmodelingManagement()
+	{
+		
+	}
+	function AddBooking()
+		{
+		include(plugin_dir_path(__FILE__) ."includes/add_booking.php");
+		}
+	function ManageBooking()
+		{
+		include(plugin_dir_path(__FILE__) ."includes/manage_booking.php");
+		}
+		
+	function EditBooking()
+		{
+		include(plugin_dir_path(__FILE__) ."includes/edit_booking.php");
+		}		
+		
+		function AddModel()
+		{
+		include(plugin_dir_path(__FILE__) ."includes/add_model.php");
+
+		}
+		function ManageModel()
+		{
+		include(plugin_dir_path(__FILE__) ."includes/manage_model.php");
+
+
+		}
+		function EditModel()
+		{
+		include(plugin_dir_path(__FILE__) ."includes/edit_model.php");
+
+
+		}
+		add_shortcode('AddBooking', 'AddBooking');
+		add_shortcode('AddModel', 'AddModel');
+		
+		
+?>

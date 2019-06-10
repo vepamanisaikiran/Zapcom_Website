@@ -1,0 +1,147 @@
+/*
+CSS - Get BLOGS
+*/
+
+.tech-sec:nth-child(even){
+		/*background-color: rgba(238,238,238,1);*/
+        background-color: #f2f2f2;
+	}
+	.tech-sec{
+		text-align: left;
+		padding: 5% 5%;
+		float: left;
+		width: 75%;
+		background: #fff;
+		/*height:80vh;*/
+		/*border-top: 5px solid #c7c7c7;*/
+	}
+	.tech-heading{
+	  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+
+   max-height: 15px;      /* fallback */
+   -webkit-line-clamp: 1; /* number of lines to show */
+   -webkit-box-orient: vertical;
+		font-size: 2.5vmin;
+		margin-left: 10px;
+		margin-top: 2%;
+		margin-bottom: 3%;
+		font-family: 'montserratLight' !important;
+		color: #198AC9;
+		line-height: 1;
+	}
+	.para1{
+		width: 100%;
+		font-size:3.0vmin;
+		margin-top: 1%;
+		margin-bottom: 2%;
+		font-family: 'montserratLight' !important;
+		color: #003D5F;
+	}
+	.dateTime{
+		width: 100%;
+		font-size: 2.1vmin;
+		margin-left: 10px;
+		float: left;
+		color: #003D5F;
+		font-family: 'montserratLight' !important;
+		/*font-style: italic;*/
+	}
+	.blogDiv{
+		height: 300px;
+		width: 370px;
+		background-color: white;
+		/*background-color: white*/
+	}
+	.hoverBlog{
+		height: 376px;
+		width: 370px;
+		margin-top: 20px;
+		margin-left: 4%;
+		float: left;
+	}
+	.hoverBlog:hover{
+		box-shadow: 2px 2px 6px 4px #cccccc;
+	}
+	.blogDiv:hover .blogDiv{
+		background-color: #000000;
+    	opacity:0.5;
+	}
+	.hoverBlog:hover .socialButtons{
+		display: block;
+	}
+	.image{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 100%;
+		min-height: 100%
+	}
+    .logo{
+        max-height: 35px;
+        max-width: 75px;
+    }
+    .footerBlog{
+    	margin-bottom: 2%;
+    	width: 370px;
+    	height:75px;
+    	background-color: white;
+    }
+    .socialButtons{
+    	position: absolute;
+    	width: inherit;
+    	padding-left: 240px;
+    	display: none;
+    	opacity: 1;
+    }
+    .blogHeading{
+    	padding-top: 4%;
+    }
+    .blogDate{
+    	margin-top: 2%
+    }
+
+    /* Media Queries */
+
+   @media screen and (max-width: 767px) {
+		.tech-sec{
+			text-align: left;
+			padding: 4% 6%;
+			float: left;
+			width: 85%;
+			margin-top: 20px;
+			background: #fff;
+			height:115vh;
+		}
+
+    	.hoverBlog{
+			height: 275px;
+    		width: 275px;
+    		margin-top: 30px;
+    		margin-left: 1%;
+		}
+		.blogDiv{
+			height: 250px;
+			width: 275px;
+			background-color: white;
+		}
+		.footerBlog{
+    		margin-bottom: 2%;
+    		width: 275px;
+    		height:45px;
+    		background-color: white;
+    	}
+    	.blogHeading{
+    		padding-top: 2%;
+    	}
+		.blogDate{
+    		margin-top: 1%
+    	}
+    	.socialButtons{
+    		display: block;
+    		padding-left: 145px;
+
+    	}
+
+    }

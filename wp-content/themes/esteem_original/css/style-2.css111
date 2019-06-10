@@ -1,0 +1,490 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/raleway-light-webfont.eot');
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/raleway-light-webfont.woff2') format('woff2'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/raleway-light-webfont.woff') format('woff'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/raleway-light-webfont.ttf') format('truetype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Bold-webfont.eot');
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Bold-webfont.woff2') format('woff2'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Bold-webfont.woff') format('woff'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Bold-webfont.ttf') format('truetype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Medium-webfont.eot');
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Medium-webfont.woff2') format('woff2'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Medium-webfont.woff') format('woff'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Medium-webfont.ttf') format('truetype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Medium-webfont.svg#ralewaymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Regular-webfont.eot');
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Regular-webfont.woff2') format('woff2'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Regular-webfont.woff') format('woff'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Regular-webfont.ttf') format('truetype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/Raleway-Regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/montserrat-light-webfont.eot');
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/montserrat-light-webfont.woff2') format('woff2'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/montserrat-light-webfont.woff') format('woff'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/montserrat-light-webfont.ttf') format('truetype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/montserrat-light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/roboto-regular-webfont.eot');
+    src: url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/roboto-regular-webfont.woff') format('woff'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/roboto-regular-webfont.ttf') format('truetype'),
+         url('http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/raleway/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.container {
+margin:0 auto;
+width:1200px;	
+}
+
+img { max-width:100%;} 	
+	
+/*--------header ----*/
+header {
+  padding: 13px 0;
+}
+.menu .head-b .navbar-toggle {
+    background: rgb(21, 57, 101);
+}
+.menu .head-b .navbar-toggle span.icon-bar {
+    background-color: rgb(249, 249, 249);
+}
+ul.nav.navbar-nav.top-menu li a {
+  font-family: montserratlight;
+  font-size: 14px;
+  color: #737373;
+}
+.menu{
+  margin: 10px 0 0 0;
+}
+ul.nav.navbar-nav.top-menu {
+  float: right;
+}
+ul.nav.navbar-nav.top-menu li a:hover {
+  color: rgb(25, 138, 201);
+}
+/*--------header ----*/
+
+section.banner {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/banner.jpg");
+  height: 575px;
+}
+.banner-cnt {
+    margin: 10% 0;
+    color: #fff;
+    text-align: center;
+}
+
+.zap {
+    float: left;
+    border-right: 1px solid rgb(250, 250, 250);
+    padding: 4px 21px;
+	width: 31%;
+	font-size: 40px;
+  font-family: 'ralewayregular';
+}
+
+.ban-pts {
+    float: left;
+	text-align: left;
+  width: 60%;
+  padding: 0px 0 0px 43px;
+}
+
+.sme-cnt {
+    /* float: left; */
+    width: 87%;
+    text-align: center;
+    margin: 35px auto 0 auto;
+}
+
+.ban-pts p {
+    float: left;
+    width: 100%;
+	font-size: 20px;
+  font-family: 'ralewayregular';
+  margin: 0 0 26px 0;
+}
+
+.h2-bnnr {
+    float: left;
+    width: 100%;
+	font-size: 40px;
+  font-family: robotoregular;
+  margin: 3px 0 31px 0;
+}
+
+.btns-bnnr {
+    float: left;
+    width: 100%;
+}
+
+.btn-prd.btn-primary, .btn-strt.btn-success {
+    padding: 8px 23px;
+    margin: 0 6px;
+    font-size: 20px;
+    font-family: 'ralewayregular';
+}
+.p-cnt {
+  font-size: 22px;
+  font-family: 'ralewayregular';
+}
+span.build-sp {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -30px -41px;
+  float: left;
+  height: 41px;
+  width: 42px;
+  margin: -8px 19px 0 0;
+}
+span.idea-sp {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -82px -39px;
+  float: left;
+  height: 46px;
+  width: 42px;
+  margin: -8px 19px 0 0;
+}
+
+/*-----------section2 ----------------*/
+
+section.section-2 {
+  background: #f3f1f1;
+  text-align: center;
+}
+section.section-2 {
+    background: #f3f1f1;
+    text-align: center;
+    padding: 60px 0;
+}
+.head-sec {
+    font-size: 40px;
+    font-family: 'ralewayregular';
+    text-transform: uppercase;
+    color: #212121;
+    margin: 0 0 26px 0;
+}
+.cnt-hd-sec {
+    font-family: montserratlight;    
+    font-size: 26px;
+    color: #198ac9;
+    margin: 0 0 26px 0;
+}
+.cnt-sec {
+    color: #333333;
+    font-size: 13px;    
+    font-family: 'ralewayregular';
+    margin: 0 0 24px 0;
+    line-height: 24px;
+}
+.btn-sec .btn.btn-primary {
+  font-size: 15px;
+  font-family: 'ralewaylight';
+  text-transform: uppercase;
+  padding: 12px 17px 5px 17px;
+}
+span.hiring-img-1 {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -229px -51px;
+  float: left;
+  height: 32px;
+  width: 32px;
+  margin: -7px 5px 0 0;
+}
+
+/*-----------section 3 ----------------*/
+.section-3 {
+  text-align: center;
+  padding: 60px 0;
+}
+.responsive-tabs li.active span.actve-img {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -532px -69px;
+  position: absolute;
+  height: 13px;
+  width: 143px;
+  margin: 0px 5px 0 0;
+  bottom: 0;
+  right: 30%;
+}
+span.hiring-img {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -280px -19px;
+  float: left;
+  height: 61px;
+  width: 65px;
+  margin: 0px 9px 0 0;
+}
+.responsive-tabs li:last-child a {
+  border: 0;
+}
+.slide-tab-img {
+    float: left;
+	  margin: 0 27px 0 0;
+}
+.tab-cntnts {
+    float: left;
+    text-align: left;
+	width: 63%;
+}
+
+/*-----------section-3  sec 4  ----------------*/
+
+.section-3.sec4 {
+  padding: 0 0 60px 0;
+    position: relative;
+}
+.poss-img-cnt {
+  position: absolute;
+  bottom: 33%;
+  text-align: left;
+    width: 100%;
+	color: #fff;
+}
+.hd-img {
+  font-family: 'ralewaybold';
+  font-size: 26px;
+  font-weight: normal;
+}
+span.arrow-rnd {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") 52px -37px;
+  float: left;
+  height: 43px;
+  width: 45px;
+  margin: 0px 9px 0 0;
+}
+.sol-img-2 {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+.sol-img-2 .poss-img-cnt {
+  width: 67%;
+  left: 13%;
+  bottom: 0%;
+}
+
+
+/* ----------css-hover--txt-------------------*/
+
+.hover_img:hover {top:0 }
+
+.sol-img-1:hover > .item_description {bottom: 59px;opacity: 0.8; /* display: block; */z-index: 99999;}
+
+.sol-img-1:hover > .poss-img-cnt {display:none;}
+
+.sol-img-1:hover > .portfolio_zoom {top:104px; }
+
+.sol-img-1:hover > .portfolio_link {top:104px; }
+
+.hover_img {
+overflow: hidden;
+position: relative;
+height: 211px;
+width: 235px;
+background: #343434;
+border-radius: 15px;
+}
+
+.item_description {
+position: absolute;
+opacity: 0;
+bottom: -318px;
+left: 0;
+right: 0;
+height: 73.5%;
+background: rgba(60, 60, 47, 0.66);
+text-align: center;
+color: #3e3e3e;
+transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+/* display: none; */
+z-index: -99999;
+}
+
+.item_description > p {
+margin: 20px 0 0 0;
+}
+
+span.portfolio_link {
+right: 76px;
+background-image: url(http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/fb-ft_146.png);
+background-position: 0 0;
+z-index: 303;
+transition-delay: 0.3s;
+-o-transition-delay: 0.3s;
+-moz-transition-delay: 0.3s;
+-webkit-transition-delay: 0.3s;
+
+width: 33px;
+height: 33px;
+position: absolute;
+top: -104px;
+}
+
+span.portfolio_zoom {
+left: 76px;
+background-image: url(http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/yout_154.png);
+background-position: 0 0;
+z-index: 302;
+transition-delay: 0.2s;
+-o-transition-delay: 0.2s;
+-moz-transition-delay: 0.2s;
+-webkit-transition-delay: 0.2s;
+
+width: 33px;
+height: 33px;
+position: absolute;
+top: -104px;
+}
+
+.over {
+/* position: absolute; */
+margin: 0 49px 0 0;
+width: 237px;
+float: right;
+margin: 0 49px 25px 0;
+width: 237px;
+}
+
+.item_description .mouser-cnt {
+  bottom: 37%;
+  position: absolute;
+  width: 100%;
+}
+.center-img-spt {
+  margin: 0 auto;
+  width: 45px;
+}
+
+.sol-img-2:hover > .item_description {top: 0;opacity: 0.8; /* display: block; */z-index: 99999;}
+
+.sol-img-2:hover > .poss-img-cnt {display:none;}
+
+.sol-img-2:hover > .portfolio_zoom {top:104px; }
+
+.sol-img-2:hover > .portfolio_link {top:104px; }
+
+.sol-img-2 .item_description {
+  height: 100%;
+  top: -353px;
+}
+
+/* ----------css-hover--txt----------------*/
+
+
+/* ---------- section.footer -------------*/
+
+section.footer {
+  padding: 60px 0;
+  background: #198ac9;
+    float: left;
+  width: 100%;
+}
+.fot-1 {
+  float: left;
+  width: 33.3333%;
+    border-right: 1px solid rgb(33, 152, 218);
+}
+.fot-1 p {
+  font-size: 15px;
+  font-family: 'ralewayregular';
+  color: #fff;
+  float: left;
+}
+span.call-spt, span.mail-spt,  span.face-spt, span.tweet-spt, span.gogl-spt, span.linkin-spt {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -21px -102px;
+  float: left;
+  height: 67px;
+  width: 61px;
+  margin: 0px 19px 0 0;
+}
+span.mail-spt {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -83px -102px;
+ }
+ span.face-spt {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -147px -102px;
+  margin: 0px 2px 0 0;
+ }
+  span.tweet-spt {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -209px -102px;
+  margin: 0px 2px 0 0;
+ }
+  span.gogl-spt {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -272px -102px;
+  margin: 0px 2px 0 0;
+ }
+  span.linkin-spt {
+  background: url("http://wpdemo.superbcart.com/magnum-honda/wp-content/themes/esteem/images/sprite.png") -333px -102px;
+  margin: 0px 2px 0 0;
+ }
+ .center-fot {
+  margin: 0 auto;
+  width: 68%;
+}
+
+/* ---------- section.footer close -------------*/
+
+
+section.copy-rt {
+  float: left;
+  width: 100%;
+  background: rgb(2, 14, 24);
+  text-align: center;
+  padding: 30px 0;
+}
+
+.copy-cnt {
+  font-size: 12px;
+  font-family: 'ralewayregular';
+  color: #989898;
+}
+

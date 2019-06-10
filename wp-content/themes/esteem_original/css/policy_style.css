@@ -1,0 +1,17 @@
+.zap_banner_heading {
+    font-family: 'montserratRegular';
+    font-size: 25px !important;
+    text-transform: capitalize;
+}
+
+.container {
+    margin: 20px !important;
+    width: inherit !important;
+    padding: 0;
+}
+
+.zap_body {
+    font-size: 16px !important;
+    font-family: 'montserratLight';
+     margin-bottom: 1em !important;  
+}

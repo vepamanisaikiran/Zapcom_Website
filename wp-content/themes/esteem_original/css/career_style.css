@@ -1,0 +1,885 @@
+ body{
+            padding-top: 0px !important;
+        }
+     .row{
+        margin-right :0px !important;
+        margin-left: : 0px !important;
+    }
+
+/*
+input[type=file] {
+     display: inline !important; 
+}
+*/
+
+/*
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+*/
+
+        .zapcom-heading{
+            font-family: 'montserratLight';
+            font-size: 40px;
+        }
+        .zapcom-subheading{
+            font-family: 'montserratBold';
+            font-size: 25px;
+        }
+        .zapcom-body{
+            font-family: 'montserratLight';
+            font-size: 18px;
+        }
+
+        #zapcom_culture div.row{
+            height: 46%;
+/*            position: relative;*/
+            top: 56px;
+            padding: 0px;
+        }
+
+.zap_h3{
+    color:#003d5f;
+}
+
+        .culture_specs{
+            text-align: left;
+            margin: 10px 10px;
+        }
+
+        .zap_banner_text {
+            top: 225px !important;
+        }    
+
+        .zap_banner_body {
+            margin-top: 1em !important;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+ 
+       
+        #career_banner_img{
+            background-image:url('../images/career_banner_temp.jpg');
+        }
+       
+        .jobDesc_title{
+            font-size: 15px;
+        }
+
+        input[type="button"]{
+           outline:none;
+        }
+        input[type="button"]::-moz-focus-inner {
+           border: 0;
+        }
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 70px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            
+        }
+        .jobModal{
+            width: 70% !important;
+            position: absolute;
+            right: 15vw;
+            border-radius: 15px;
+        }
+        .closeButton {
+            width: 4ex;
+            height: 4ex;
+        }
+        #applyButton {
+            float: none;
+            margin: 0 auto;
+            background-color: #198ac9;
+            color: #FFFFFF;
+            font-size: 15px;
+            font-family: montserratLight;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        #applyButton:hover {
+            background-color: #002438;
+            font-weight: 600;
+            color: white;
+        }
+        .group {
+            margin-bottom: 25px;
+        }
+        ol{
+            list-style-type: none !important;
+        }
+        .cnt-form {
+            padding-left: 1%;
+        }
+        
+        
+        
+		input::-webkit-input-placeholder {
+			font-family:montserratLight;
+			color: rgb(119, 119, 119);
+		}
+
+		input:-moz-placeholder { /* Firefox 18- */
+			font-family:montserratLight;
+			color: rgb(119, 119, 119);
+		}
+
+		input::-moz-placeholder {  /* Firefox 19+ */
+			font-family:montserratLight;
+			color: rgb(119, 119, 119);
+		}
+
+		input:-ms-input-placeholder {  
+			font-family:montserratLight;
+			color: rgb(119, 119, 119);
+		}
+		
+		
+		
+		#tagcloud
+        {
+            width: 100%;
+            height:auto;
+        }
+		#tagcloud span
+		{
+			display: inline-flex;
+			background-color: white;
+/*			border-radius: 1vmin;*/
+			/*margin: 3vmin 2vmin;*/
+            margin: 1vmin 1vmin;
+			color: rgb(0, 0, 0) !important;
+		}
+		#tagcloud span a
+		{
+            color: rgb(0, 30, 47);
+            padding: 1.6vmin;
+            font-weight: 900;
+		}
+		#tagcloud span a:hover
+		{
+			color: white;
+			padding: 1.6vmin;
+			text-decoration: none;
+		}
+        .jobName {
+            background: #ECECEC;
+            border-radius: 15px;
+            display: block;
+            color: #7f7f7f;
+            margin: 0px auto;
+            margin-top: 100px;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25), 0 2px 8px 0 rgba(0, 0, 0, 0.55);
+        }
+        
+        .jobName a{
+            font-size:15px; 
+        }
+            
+        #tagcloud .jobName {
+            font-size: 2.5vmin !important;
+            margin: 2vmin 2vmin !important;
+        }
+        
+        #job_vacancy_sec{
+            padding: 0px;
+            text-align: center;
+        }
+        .jobPositionDiv {
+            /*background-color: rgba(25, 126, 183, 0.55);*/
+            margin-bottom: 2vmin;
+/*            padding: 0.1vmin 3vmin;*/
+            text-align: center;
+            width: 100%;
+            height: auto;
+            /*position: absolute;*/
+            top: 60vmin;
+        }
+        #jobPositionDivID {
+            display: block;
+            /*background-color: rgba(0,0,0,0.4);*/
+        }
+    
+    .jobName:hover
+		{
+			display: inline-flex;
+			background-color: rgb(0, 61, 95) !important;
+			border-radius: 1vmin;
+			margin: 2vmin 2vmin;
+			color: white !important;
+		}
+        
+        #bannerID {
+            background-image:url('../images/careers_1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            -moz-transition: height .45s;
+            -ms-transition: height .45s;
+            -o-transition: height .45s;
+            -webkit-transition: height .45s;
+            transition: height .45s;
+            width: 100%;
+            height: 34vmin;
+            overflow: hidden;
+        }
+        /*.careerFormStyles {
+            border-radius: 15px;
+            height: 50vmin;
+            background-color: #EFECEC;
+        }*/
+        .closeBtn {
+            font-family: 'montserratLight' !important;
+            font-weight: 600 !important;
+        }
+        .fontStyles {
+            font-family: 'montserratLight' !important;
+        }
+        
+        
+        .boxPoints {
+            border-radius: 5px 5px 0px 0px;
+            margin-top: 10px;
+            box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.25), 0 2px 8px 0 rgb(0, 0, 0);
+        }
+        .workAtZap {
+            text-align: center;
+            width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+        .eachCol {
+            padding-left: 4vmin !important;
+            padding-bottom: 4vmin;
+            padding-right: 4vmin !important;
+        }
+        
+        .careerFormStyle {
+            top: 46px;
+    /* height: 66vmin; */
+    background-color: #FFFFFF;
+    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.28); */
+/*    position: relative;*/
+        }
+        
+        .perks-benefits {
+            background-image: url('../images/perks-benefits-dark.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:100%;
+            height: inherit;
+            position: static !important;
+        }
+        /*.ban-perk-image {
+            background-color: black;
+        }*/
+
+        .perks , .perk-pos{
+            height:630px;
+        }
+    
+        #our_people{
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: -3;
+            padding:0 20px;
+        }
+
+        #our_people span.zap_body{
+            color: #777777;
+        }
+        
+        .employee_saying span{
+            display: inline;
+        }
+        #our_people h2{
+            /*font-size: 6vmin;*/
+            padding-bottom: 10px;
+            font-family: 'montserratblack' !important;
+            padding-top: 10vmin;
+        }
+        #our_people h6{
+            /*font-size: 3vmin;*/
+            padding: 10px 60px;
+            font-family: 'montserratLight' !important;
+        }
+        #our_people .employee_testimonials > div{
+            padding: 10px 30px;
+        }
+        #our_people .employee_image{
+            /*float:right;*/
+            width: 150px;
+            height: 150px;
+            background-size: 100%;
+            border-radius: 50%;
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+        }
+        #our_people .employee_content{
+            text-align: left;
+            font-size: 17px;
+            color: #777777;
+        }
+        #our_people p.employee_saying{
+            margin-top: 1vmin;
+            font-style: italic;
+            padding-right: 1vmin;
+            padding-left: 20px;
+        }
+        #our_people p.employee_details{
+            font-style: italic;
+            font-size: 15px;
+            padding-left: 20px;
+        }
+
+#our_culture{
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: -3;
+/*            background-color: rgb(238,238,238);*/
+            /*border-bottom: 3px black solid;*/
+/*            padding-top: 15px;*/
+            padding-bottom: 0px;
+        }
+        #our_culture h2{
+           padding-top: 5vmin;
+        	margin: 0.5em 0;
+        }
+        #our_culture h6{
+            font-size: 3vmin;
+            padding: 10px 75px;
+        }
+    
+        #myCarousel{
+            box-shadow: 0 5px 23px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            margin-bottom: 33px;
+        }
+        #myCarousel img{
+            width: 100%;
+        }
+        
+        .carousel-indicators li{
+            color: #000 !important;
+            border-color: #000 !important;
+            /*background-color: rgba(255,255,255,1) !important;*/
+        }
+        .carousel-indicators li:active{
+            color: #000 !important;
+            background-color: rgba(0,0,0,1) !important;
+        }
+        .carousel-inner{
+            /*background-image: url('<?php bloginfo('template_directory'); ?>/images/careers_destiny.jpg');
+            background-size: cover;*/
+            background-color: #198AC9;
+        }
+        #myCarousel .item{
+            /*height: 300px;*/
+            /*background-color: rgba(0,0,0,0.4);*/
+            -webkit-transition: 0.3s ease-in-out left;
+            -moz-transition: 0.3s ease-in-out left;
+            -o-transition: 0.3s ease-in-out left;
+            transition: 0.3s ease-in-out left;
+        }
+        #myCarousel h3{
+            color: #fff;
+            font-size: 3vmin;
+            line-height: 1;
+        }
+        #myCarousel .carousel-caption{
+            width:100%;
+            left:0px;
+            right: 0px;
+            bottom:0px;
+            background-color: #198AC9;
+        }
+        #myCarousel img{
+            width:100%;
+        }
+        
+
+
+        #perk_benefit{
+            background-image: url('../images/perks-benefits-dark.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:100%;
+            height: 450px;
+            padding: 10px 25px;
+            text-align: center;
+        }
+        #perk_benefit h3{
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        #perk_benefit p{
+            color: #fff;
+            font-size: 15px;
+            padding: 2px 5px;
+            text-align: left;
+            width: auto;
+        }
+        #perk_benefit li{
+            font-size: 2.5vmin;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        .perks-benefits p.zap_body{
+            color: white;
+            margin: 20px;
+            font-size: 16px;
+        }
+
+
+        div.perk-pos .carr-benft{
+            width: 33%;
+        }
+        
+
+        #zapcom_culture h2{
+                position: initial;
+                text-align: center;
+                   margin: 0 0.2em 0.2em;
+                font-family: 'montserratbold';
+        }
+
+        #zapcom_culture ul li {
+/*
+           border-left: 2px solid black;
+           border-right: 2px solid black;
+*/
+        }
+
+        #zapcom_culture h3.culture_question{
+            color: #fff;
+            font-family: 'montserratLight' !important;
+        }
+        #zapcom_culture p.culture_answer{
+            width: 100%;
+            color: #000;
+            position: absolute;
+                top: 134px;
+            transform: translateY(-50%);
+        }
+
+        #our_opportunities{
+            width: 100%;
+            text-align: center;
+            position: relative;
+            padding-bottom: 0px;
+            padding-top: 15px;
+        }
+        #our_opportunities h2{
+            /*font-size: 6vmin;*/
+            padding-bottom: 20px;
+/*            padding-top:10vmin;*/
+            font-family: 'montserratbold' !important;
+        }
+        #our_opportunities h6{
+            font-size: 3vmin;
+            padding: 10px 75px;
+        }
+
+        #hor_line_culture{
+                height: 10px;
+                position: inital;
+        }
+
+
+        .txt-div{
+            /*border-bottom: 1px #eee solid;*/
+        }
+
+        input[type="text"],
+        input[type="text"]:focus,
+        input[type="email"],
+        input[type="email"]:focus,
+        select,
+        select:focus{
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+            border-bottom:1px #eee solid !important;
+        }
+        
+
+div#menu_career{
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            width: 100%;
+            
+        }
+        #menu_career div#career_menu_button{
+            /*background-color: #2196f3;*/
+            /*background-color: #01c3b1;*/
+            /*background-color: #248dd4;*/
+            /*width: 240px;*/
+            /*height: 63px;*/
+            /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+            /*border-radius: 50%;*/
+            color: #fff;
+            /*font-size: 25px;*/
+            cursor: pointer;
+            position: absolute;
+            right: 40px;
+            bottom: 70px;
+            /*line-height: 2.5;*/
+        }
+        .bounce{
+            animation-name: bounce_anim;
+            animation-duration: 3s;
+            animation-delay:0s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bounce_anim {
+            0%   {
+                /*-ms-transform: translate(0px, 100px); 
+                -webkit-transform: translate(0px, 100px); 
+                transform: translate(0px, 0px);*/
+                bottom: 16px;
+            }
+            50%  {
+                /*-ms-transform: translate(50px, 100px); 
+                -webkit-transform: translate(50px, 100px); 
+                transform: translate(0px, 50px);*/
+                bottom: 32px;
+            }
+            100% {
+               /* -ms-transform: translate(0px, 100px); 
+                -webkit-transform: translate(0px, 100px); 
+                transform: translate(0px, 0px);*/
+                bottom: 16px;
+            }
+        }
+        #menu_career div#career_menu_links{
+            width: 60%;
+            /*float: right;*/
+            margin-right: 7px;
+            /*transform: skewX(-10deg);*/
+            position: absolute;
+            right: 50px;
+            
+        }
+        #menu_career div#career_menu_links a{
+            font-size: 20px;
+            /*color: #000;*/
+            color: #fff;
+            font-family: 'montserratBold';
+            text-decoration: none;
+        }
+        #menu_career div#career_menu_links a:hover{
+            text-decoration: none;
+            /*color: #003d5f;*/
+            /*color: #04675e;*/
+            /*color: #0089c5;*/
+            font-size: 22px;
+        }
+
+
+		@media only screen and (min-width: 768px) {
+			.career-form-div{
+				display: table;
+  				margin: auto;
+			}
+            
+            #our_culture .slider_container{
+                width:50%;
+            }
+            
+            #zapcom_culture {
+                padding: 20px;
+                text-align: center;
+            }
+            
+            #zapcom_culture div[class*="col-"]{
+                height: 100%;
+                padding:0px;
+                text-align: center;
+/*                display: flex;*/
+            }
+            #zapcom_culture .culture_image{
+                margin: 0px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 315px;
+                width: 100%;
+                border-top:1px solid white;
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+/*                border-bottom: 3px solid white;*/
+                background-position: 100%;
+            }
+            #zapcom_culture h3.culture_question{
+                font-size: 40px;
+                margin-top: 100px;
+                width: 100%;
+            }
+            #zapcom_culture p.culture_answer{
+               font-family: 'montserratlight';
+                font-size: 16px;
+                /* margin-top: 70px; */
+               width: 255px;
+                height: 75px;
+                padding: 0px 15px;
+            }
+            
+            #menu_career div#career_menu_links{
+                height: 45px;
+                /*padding-top: 15px;*/
+                /*opacity: 0.7;*/
+                /*background-color: #fff;*/
+                /*margin-top: 8px;*/
+                bottom: 25px;
+                
+            }
+		}
+
+         @media only screen and (max-width: 767px){
+             #we_are_hiring{
+                display: none;
+             }
+             
+            .headerBannnerwords{
+                top: 35%;
+                padding: 0 25px;
+            }
+            .headerBannnerwords span{
+                font-size: 30px;
+            }
+             
+            #hor_line_culture {
+                 height: 10px; 
+                 left: 25%; 
+                 position: initial;
+                 top: 48px; 
+            }
+             
+            #zapcom_culture h2 {
+                 position: initial; 
+                font-family: 'montserratbold' !important;
+            }
+
+            #our_culture .slider_container{
+                width:85%;
+            }
+            
+            #our_culture h2 {
+                padding-top: 16vmin;
+            }
+             
+             #our_people h2 {
+                 padding-top: 16vmin;
+             }
+            
+            #zapcom_culture {
+                padding: 20px 30px;
+                position: relative;
+                z-index: -3;
+                text-align: center;
+            }
+            
+             #zapcom_culture ul {
+                 padding-top: 0px !important;
+             }
+             
+            #zapcom_culture div[class*="col-"]{
+/*                height: 300px;*/
+                padding:0px;
+            }
+            #zapcom_culture .culture_image{
+                margin: 0px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 300px;
+                width: 100%;
+                background-position: 100%;
+            }
+            #zapcom_culture h3.culture_question{
+                font-size: 40px;
+                margin-top: 40px;
+            }
+            #zapcom_culture p.culture_answer{
+                font-size: 20px;
+                /*margin-top: 110px;*/
+                padding: 0px 15px;
+            }
+            
+            div.perk-pos .carr-benft{
+            width: 50%;
+            }
+             
+            .perks-benefits p.zap_body {
+                font-size: 16px;
+                margin: 20px;
+            }
+            
+            #menu_career div#career_menu_links{
+                padding-top: 0px;
+                /*opacity: 0.7;*/
+                /*background-color: #fff;*/
+                border-radius: 20px;
+                bottom: 13px;
+            }
+            #menu_career div#career_menu_button{
+                margin-top: 15px;
+            }
+            
+            #menu_career div#career_menu_links a{
+                font-size: 16px;
+            }
+            #menu_career div#career_menu_links a:hover{
+                font-size: 18px;
+            }
+            
+            .career-form-div{
+				border-right: none;
+			}
+             
+             .perks, .perk-pos {
+                height: 650px;
+            }
+        }
+
+        #cul-img_1{
+/*            display: none;*/
+        }
+
+
+        #cul-img_1{
+            -webkit-animation-name: appear; /* Chrome, Safari, Opera */
+            -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+            animation-name: appear;
+            animation-duration: 4s;
+        }
+
+    #cul-img_2{
+            -webkit-animation-name: appear; /* Chrome, Safari, Opera */
+            -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
+            animation-name: appear;
+            animation-duration: 8s;
+        }
+    
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes appear {
+            from {display: none;}
+            to {display: block;}
+        }
+
+        /* Standard syntax */
+        @keyframes appear {
+            from {display: none;}
+            to {display: block;}
+        }
+
+@media only screen and (min-width:768px) and (max-width:1000px){
+    .zap_banner_text{
+        top:250px !important;
+    }
+    
+    .zap_section1{
+    height:750px !important;
+}
+    
+    .zap_banner_heading {
+    font-family: 'montserratLight';
+    font-size: 25px !important;
+    text-transform: uppercase;
+}
+
+    #menu_career div#career_menu_button {
+    /* background-color: #2196f3; */
+    /* background-color: #01c3b1; */
+    /* background-color: #248dd4; */
+    /* width: 240px; */
+    /* height: 63px; */
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    /* border-radius: 50%; */
+    color: #fff;
+    /* font-size: 25px; */
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    bottom: 270px;
+    /* line-height: 2.5; */
+}
+    
+    .perks, .perk-pos {
+    height: 500px;
+    }
+    
+}
+
+.li_color:nth-child(odd){
+    font-family: 'montserratregular' !important;   font-size: 18px;
+    text-align: left;
+    font-size: 16px;
+    background-color: #32848e;
+    /* background-color: #ffffff; */
+    padding: 5px;
+    color: #ffffff;
+/*    line-height: 1;*/
+/*    text-indent: 5px;*/
+    vertical-align: middle;
+}
+
+.li_color:nth-child(even){
+    font-family: 'montserratregular' !important;   font-size: 18px;
+    text-align: left;
+    font-size: 16px;
+/*    background-color: #00BCD4;*/
+    /* background-color: #ffffff; */
+    padding: 5px;
+    color: #000000;
+/*    line-height: 1;*/
+/*    text-indent: 5px;*/
+    vertical-align: middle;
+}
+
+@media only screen and (min-width:990px) and (max-width:1040px){
+    .li_color:nth-child(odd){
+    font-size: 15px;
+    }
+    .li_color:nth-child(even){
+        font-size: 15px;
+    }
+     .perks , .perk-pos{
+        height:647px !important;
+    }
+}
+
+@media only screen and (min-width:1040px) and (max-width:1290px){
+    .li_color:nth-child(odd){
+    font-size: 15px;
+    }
+    .li_color:nth-child(even){
+        font-size: 15px;
+    }
+     .perks , .perk-pos{
+        height:630px !important;
+    }
+    .perks-benefits p.zap_body{
+        font-size: 15px;
+    }
+    
+}

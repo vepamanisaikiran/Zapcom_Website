@@ -1,0 +1,347 @@
+<?php
+/*
+Template Name:Who We Are
+*/
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style-1.css"> 
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/media-query.css">
+
+<!--<link href="css/responsive-tabs.css" rel="stylesheet" type="text/css" media="all" />-->
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/jquery.bxslider.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jss/responsive-tabs.min.js" type="text/javascript"></script>
+
+
+<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && 
+
+location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+    
+ <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<?php
+/**
+ * This hook is important for wordpress plugins and other many things
+ */
+wp_head();
+?>
+</head>
+<body <?php body_class(); ?>>
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="inner-wrap">
+				<div class="hgroup-wrap clearfix">
+					<div class="site-branding">
+						<?php if( ( of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'logo_only' ) && of_get_option( 'esteem_header_logo_image', '' ) != '' ) {
+						?>
+							<div class="header-logo-image">
+								<a rel="home" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<img alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" src="<?php echo of_get_option( 'esteem_header_logo_image', '' ); ?>">
+	</a>
+							</div><!-- .header-logo-image -->
+						<?php }
+						if( of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'text_only' ) {
+						?>
+							<div class="header-text">
+								<h1 id="site-title">
+										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+											<?php bloginfo( 'name' ); ?>
+										</a>
+									</h1>
+								<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+							</div><!-- .header-text -->
+						<?php } ?>
+					</div><!-- .site-branding -->
+					<div class="hgroup-wrap-right">
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<h3 class="menu-toggle"></h3>
+							<div class="nav-menu clearfix">
+								<?php
+									if ( has_nav_menu( 'primary' ) ) {
+											wp_nav_menu( array( 'theme_location' => 'primary',
+																'container' => false
+																 ) );
+									}
+									else {
+											wp_page_menu();
+									}
+								?>
+							</div><!-- .nav-menu -->
+						</nav><!-- #site-description -->
+						<!--<i class="icon-search search-top"></i>
+						<div class="search-form-top">
+							<?php //get_search_form(); ?>
+						</div>--><!-- .search-form-top -->
+					</div><!-- .hgroup-wrap-right -->
+				</div><!-- .hgroup-wrap -->
+			</div><!-- .inner-wrap -->
+			<?php //esteem_render_header_image(); ?>
+
+			<?php
+   		
+		   	if( !( is_front_page()) ) { ?>
+			<!--	<section class="page-title-bar clearfix">
+					<div class="inner-wrap">
+						<?php //if( '' != esteem_header_title() ) { ?>
+							<div class="page-title-wrap"><h1><?php //echo esteem_header_title(); ?></h1></div>
+						<?php //} ?>
+						<?php //if( function_exists( 'esteem_breadcrumb' ) ) { esteem_breadcrumb(); } ?>
+					</div>
+				</section>-->
+			<?php } ?>
+		</header><!-- #masthead -->
+		<div id="main" class="site-main inner-wrap">
+
+<section class="banner">
+
+
+ <div class="banner-img-pos"> <img src="<?php bloginfo('template_url'); ?>/images/who-we-are-banner.jpg"> </div>
+<div class="container">
+<div class="banner-cnt who-we-are"> 
+  
+   <h1 class="h2-bnnr-whowr">@WeareZapcom</h1>
+  <p> Your trusted partner for Incubating Innovative Ideas, Sourcing, building solutions and Go-To market strategy</p>
+   <h1 class="h2-bnnr-whowr">Our Philosophy </h1>
+  <p> We have no clients, we have partners and we are in longer term journey together</p>
+</div>
+<div class="img-dwn"> <a href="#whoweare"> <span class="dwn-sprt"> </span> </a> </div>
+
+</div>
+
+</section> <!--- banner section ---->
+
+<section class="section-3" id="whoweare">
+<div class="container">
+<h2 class="head-sec"> We are zapcom </h2>
+<!--<h3 class="cnt-hd-sec">Your trusted partner for Incubating Innovative Ideas, Sourcing, building  solutions and Go-To market strategy </h3>-->
+
+<p class="cnt-sec"> ZapCom has a Strong Leadership team with 20+ years of Global experience in Product Engineering and E2E Consulting. We have a proven set of execution capabilities in developing and managing Global Products in an Offshore-Onshore delivery model. We have successfully built and developed Captives (Global Development Center) for multi-national companies with core expertise and deeper domain knowledge in eCommerce and Travel & Hospitality industry. Our team has a strong technical expertise in building and deploying large-scale systems that are highly scalable and immensely productive.  </p>
+
+<div class="static-tab-whowr">
+<div class="whowr-tab1"> <h4> Cloud </h4>
+<div class="img-stat"> <span class="cloud"> </span> </div>
+ <p> Zapcom is building complex software solutions on Cloud, to deliver better holiday experiences  for your customers.  </p>  <a href="#"> Explore Cloud </a>
+  </div>
+<div class="whowr-tab1"> <h4> Big-Data </h4>
+<div class="img-stat"> <span class="data"> </span> </div>
+ <p> For customers, our big data solutions can be access to faster, easier, less complex and actionable insights.  </p>  <a href="#"> Explore Cloud </a>
+  </div>
+<div class="whowr-tab1"> <h4> m-Commerce </h4>
+<div class="img-stat"> <span class="commerce"> </span> </div>
+ <p> Our solutions help adopt mobile as a new selling channel while seamlessly leveraging the power of personalized marketing </p>  <a href="#"> Explore Cloud </a>
+  </div>
+</div>
+
+<div class="btn-sec"> <a href="#" class="btn btn-primary" style="  text-transform: none;padding: 7px 17px 5px 17px;"> Explore <span class="arrow-spt"> </span> </a> </div>
+
+</div>
+</section> <!---  section 2 ---->
+
+<section class="section-2 whowr">
+<div class="container">
+<h2 class="head-sec"> Meet the team </h2>
+
+<div class="slider4">
+  <div class="slide"><img src="<?php bloginfo('template_url'); ?>/images/team1.jpg">
+  <div class="item_description slide-hovr"> 
+   <div class="mouser-cnt">
+    <h4 class="name-ovr" style="color: #fff;"> Hospital </h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum  eget mauris.   </p>
+	<p class="center-img-spt ovr">  <span class="face ovr"> </span>
+    <span class="tweet ovr"> </span>
+    <span class="google ovr"> </span>
+    <span class="in ovr"> </span> </p>
+				  </div>
+                  </div>
+  </div>
+  <div class="slide"><img src="<?php bloginfo('template_url'); ?>/images/team2.jpg">
+  <div class="item_description slide-hovr"> 
+   <div class="mouser-cnt">
+    <h4 class="name-ovr" style="color: #fff;"> Hospital </h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum  eget mauris.   </p>
+	<p class="center-img-spt ovr">  <span class="face ovr"> </span>
+    <span class="tweet ovr"> </span>
+    <span class="google ovr"> </span>
+    <span class="in ovr"> </span> </p>
+				  </div>
+                  </div>
+  </div>
+  <div class="slide"><img src="<?php bloginfo('template_url'); ?>/images/team3.jpg">
+   <div class="item_description slide-hovr"> 
+   <div class="mouser-cnt">
+    <h4 class="name-ovr" style="color: #fff;"> Hospital </h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum  eget mauris.   </p>
+	<p class="center-img-spt ovr">  <span class="face ovr"> </span>
+    <span class="tweet ovr"> </span>
+    <span class="google ovr"> </span>
+    <span class="in ovr"> </span> </p>
+				  </div>
+                  </div>
+  </div>
+  <div class="slide"><img src="<?php bloginfo('template_url'); ?>/images/team4.jpg">
+   <div class="item_description slide-hovr"> 
+   <div class="mouser-cnt">
+    <h4 class="name-ovr" style="color: #fff;"> Hospital </h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum  eget mauris.   </p>
+	<p class="center-img-spt ovr">  <span class="face ovr"> </span>
+    <span class="tweet ovr"> </span>
+    <span class="google ovr"> </span>
+    <span class="in ovr"> </span> </p>
+				  </div>
+                  </div>
+  </div>
+  <div class="slide"><img src="<?php bloginfo('template_url'); ?>/images/team1.jpg">
+   <div class="item_description slide-hovr"> 
+   <div class="mouser-cnt">
+    <h4 class="name-ovr" style="color: #fff;"> Hospital </h4>
+   <p class="cnt-sec" style="color: #fff;"> Lorem ipsum  eget mauris.   </p>
+	<p class="center-img-spt ovr">  <span class="face ovr"> </span>
+    <span class="tweet ovr"> </span>
+    <span class="google ovr"> </span>
+    <span class="in ovr"> </span> </p>
+				  </div>
+                  </div>
+  </div>
+  
+</div>
+
+
+
+
+</div>
+</section> <!---  section 3 ---->
+
+
+<section class="section-3"> 
+<div class="container">
+<h2 class="head-sec"> Our Solutions </h2>
+
+<div class="snaps-contr">
+<div class="snap-div"> <img src="<?php bloginfo('template_url'); ?>/images/snap-1.jpg"> </div>
+<div class="snap-div"> <img src="<?php bloginfo('template_url'); ?>/images/snap-2.jpg"> </div>
+<div class="snap-div" style="padding: 0;"> <img src="<?php bloginfo('template_url'); ?>/images/snap-3.jpg"> </div>
+<div class="snap-div"> <img src="<?php bloginfo('template_url'); ?>/images/snap-4.jpg"> </div>
+<div class="snap-div" style="padding: 0;"> <img src="<?php bloginfo('template_url'); ?>/images/snap-5.jpg"> </div>
+
+</div>
+</div>
+
+</section> <!---  section 3 ---->
+
+<section class="section-whowr-cnt"> 
+<div class="container">
+
+<h2 class="head-sec"> Continue Exploring </h2>
+<h2 class="sec-two">What we do </h2>
+
+<div class="whowr-tab1 cnt-exp"> <h4> Product and IP Building </h4>
+ <p> Donec dignissim orci rhoncus nibh cursus, id eleifend est luctus.   </p>  <a href="#"> View More </a>
+  </div>
+  
+  <div class="whowr-tab1 cnt-exp"> <h4> Standing up Start-up Ideas </h4>
+ <p> Donec dignissim orci rhoncus nibh cursus, id eleifend est luctus.  </p>  <a href="#"> View More </a>
+  </div>
+  <div class="whowr-tab1 cnt-exp"> <h4> Product Engineering Services </h4>
+ <p> Donec dignissim orci rhoncus nibh cursus, id eleifend est luctus.   </p>  <a href="#"> View More </a>
+  </div>
+
+</div>
+</section> <!---  section 3 ---->
+
+
+
+<section class="footer">
+<div class="container">
+
+<div class="fot-1">
+<p> <span class="call-spt"> </span> </p>
+<p> CALL US <br> INDIA: +91-80-67232300  <br>  USA: +1-925-350-7003 </p>
+</div>
+
+<div class="fot-1">
+<div class="center-fot">
+<p> <span class="mail-spt"> </span> </p>
+<p style="margin: 11px 0 0 0;"> MAIL US <br> info@zapcg.com </p>
+</div>
+</div>
+
+<div class="fot-1 shr">
+<div class="center-fot">
+<p> <span class="face-spt"> </span>
+<span class="tweet-spt"> </span>
+<span class="gogl-spt"> </span>
+<span class="linkin-spt"> </span>
+ </p>
+</div>
+</div>
+
+</div>
+</section>   <!---  section footer ---->
+
+<section class="copy-rt">
+<div class="container">
+
+<div class="copy-cnt">  © 2015 Zapcom Group. All Right Reserved  |  Privacy Policy </div>
+
+</div>
+</section>
+
+
+</div> <!-- wrapper -->
+
+
+</body>
+
+
+
+<script src="<?php bloginfo('template_url'); ?>/js/jss/bootstrap.min.js"> </script>
+<script src="<?php bloginfo('template_url'); ?>/js/jss/jquery.min.js"> </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jss/jquery.bxslider.min.js"> </script>
+
+<script>
+$(document).ready(function(){
+  $('.slider4').bxSlider({
+    slideWidth: 249,
+    minSlides: 2,
+    maxSlides: 4,
+    moveSlides: 1,
+    slideMargin: 61,
+	pager: false
+  });
+  });
+</script>
+
+<script>
+	 $('.slider4').Slider4({
+  auto: false,
+  autoControls: true
+  
+
+});
+  </script>
+
+

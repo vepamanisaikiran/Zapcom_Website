@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+input#post_name {
+  width: 73%;
+  float: left;
+  height: 40px;
+  border-radius: 14px;
+  padding: 0px 24px;
+  margin: 17px auto;
+}

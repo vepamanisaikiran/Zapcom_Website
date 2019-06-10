@@ -1,0 +1,338 @@
+
+.myNavbarNoScroll{
+        position: absolute;
+		background-color: #198AC9;
+		/*background-color: #003D5F;*/
+		background-image: url('../images/nav_pattern.png');
+		background-size: 80px;
+        left: 32%;
+        width: 78%;
+        height: 80px !important;
+		/*box-shadow: 1px 1px 11px 3px #003d5f;*/
+		 
+	}
+#myNavbar{
+    height:80px !important;
+}
+
+.myNavbarOnScroll{
+        position: absolute;
+    /* background-color: #003D5F; */
+    /* background-image: url('../images/nav_pattern.png'); */
+    /* background-size: 96px; */
+    left: 2%;
+    width: 105%;
+/*    top: 70px;*/
+    height: 70px !important;
+    /* box-shadow: 1px 1px 11px 3px #003d5f;*/
+    
+}
+	.navbar-default {
+		background-color: rgba(255, 0, 0, 0) !important;
+	}
+
+
+ .ZgapNoScroll{
+            position:absolute;			
+            left:26.65%;
+            border-bottom: 80px solid #198AC9;
+            border-left: 45px solid rgba(0,0,0,0);            
+			height: 0;
+			width: 10%;
+			display: block;
+            
+    }
+
+.ZgapOnScroll{
+			position:absolute;			
+            left:26.65%;
+            border-bottom: 80px solid #198AC9;
+            border-left: 45px solid rgba(0,0,0,0);            
+			height: 0;
+			width: 10%;
+			display: block;
+            
+    }
+
+     .nav_header_leftNoScroll{
+			    border-top: 80px solid #fff;
+                border-right: 44px solid transparent;
+                height: 0;
+                width: 28%;
+   		}
+
+    .nav_header_leftOnScroll{
+			
+/*			border-right: 44px solid transparent;*/
+			height: 0;
+			width: 29%;
+   		}
+
+   		.websitelogoNoScroll{
+			height: 50px !important;
+            width: auto !important;
+            position: absolute !important;
+            top: 15px !important;
+            margin-left: 7% !important;
+		}
+
+        .websitelogoOnScroll{
+			height: 50px !important;
+            width: auto !important;
+            position: absolute !important;
+            top: 12px !important;
+            margin-left: 7% !important;
+		}
+
+.container-fluid{
+			padding:0px;
+            height:80px;
+	}
+
+.OnScroll{
+        background-image: url('../images/nav_pattern.png');
+    background-color: rgb(153, 172, 222) !important;
+    height: 70px !important;
+    background-size: 70px;
+}
+
+.OnScroll ul {
+    margin-top: 11px !important;
+    margin-right:
+}
+
+.OnScroll .navbar-toggle {
+        margin-top: 20px !important;
+}
+
+.navbar{
+		border: 0px;
+		margin-bottom: 0px;
+	}
+
+.navbar-toggle{
+		margin-top: 36px;
+	}
+    .myNavbarNoScroll a{
+		color: #fff !important;
+		font-family: 'ralewayMedium';
+		font-size: 18px;
+		/*padding-left: 0px;*/
+		padding-top: 10px;
+		padding-bottom: 10px;
+		/*background-color: #198AC9;*/
+		margin-right: 5px;
+		border-radius: 15px;
+	}
+
+      .myNavbarNoScroll a:hover {
+    background-color:rgba(221, 221, 221, 0.73) !important;
+}
+
+.myNavbarNoScroll a:visited {
+    background-color:rgba(221, 221, 221, 0.73) !important;
+}
+
+     .myNavbarOnScroll a{
+		color: #003D5F !important;
+		font-family: 'ralewayMedium';
+		font-size: 18px;
+		/*padding-left: 0px;*/
+		padding-top: 10px;
+		padding-bottom: 10px;
+		/*background-color: #198AC9;*/
+		margin-right: 5px;
+		border-radius: 15px;
+	}
+
+.myNavbarOnScroll a:hover {
+    background-color:rgba(221, 221, 221, 0.73) !important;
+}
+
+.myNavbarOnScroll a:visited {
+    background-color:rgba(221, 221, 221, 0.73) !important;
+}
+
+ #myNavbar ul{
+			margin-top: 17px;
+			margin-right: 10% !important;
+     }
+
+
+/*///////////////////////////////// Media Queries Min Width- 999px ////////////////////////////// */
+
+
+	@media screen and (min-width: 999px){
+           
+            #nav_header_leftNoScroll{
+            border-top: 80px solid #fff;
+			border-right: 45px solid transparent;
+			height: 0;
+			width: 28%;
+             
+		}
+ .websitelogoNoScroll{
+			height: 50px !important;
+            width: auto !important;
+            position: absolute !important;
+            top: 15px !important;
+            margin-left: 7% !important;
+		}
+        
+ #myNavbar ul{
+			margin-top: 17px;
+			margin-right: 20% !important;
+		}
+
+ .ZgapNoScroll{
+            position:absolute;			
+            left:26.65%;
+            border-bottom: 80px solid #198AC9;
+            border-left: 45px solid rgba(0,0,0,0);            
+			height: 0;
+			width: 10%;
+			display: block;
+            
+    }
+
+.myNavbarNoScroll{
+        position: absolute;
+		background-color: #198AC9;
+		/*background-color: #003D5F;*/
+		background-image: url('../images/nav_pattern.png');
+		background-size: 80px;
+        left: 31%;
+        width: 75%;
+        height: 80px !important;
+		/*box-shadow: 1px 1px 11px 3px #003d5f;*/
+		 
+	}
+  }
+
+/*///////////////////////////////// Media Queries Max Width- 998px Min Width- 768px  ////////////////////////////// */ 
+
+@media only screen and (max-width: 998px) and (min-width: 768px)  {
+
+	.myNavbarNoScroll{
+        position: absolute;
+		background-color: #198AC9;
+		/*background-color: #003D5F;*/
+		background-image: url('../images/nav_pattern.png');
+		background-size: 80px;
+        left: 32%;
+        width: 78%;
+        height:80px !important;*/
+		/*box-shadow: 1px 1px 11px 3px #003d5f;*/
+		 
+	}
+
+ .ZgapNoScroll{
+            position: absolute;
+            left: 26.65%;
+            border-bottom: 80px solid #198AC9;
+            border-left: 43px solid rgba(0,0,0,0);
+            height: 0;
+            width: 10%;
+            display: block;
+    }
+
+    .nav_header_leftNoScroll{
+			    border-top: 80px solid #fff;
+                border-right: 40px solid transparent;
+                height: 0;
+                width: 29%
+   		}
+
+   		 #myNavbar ul{
+			margin-top: 17px;
+			margin-right: 12% !important;
+		}
+
+}
+
+
+/*///////////////////////////////// Media Queries Max Width-767px  ////////////////////////////// */ 
+
+@media only screen and (max-width: 767px) {
+    
+        #myNavbar{
+        height:auto !important;
+}
+
+		.myNavbarNoScroll{
+        position: absolute;
+		background-color: #198AC9;
+		background-image: url('../images/nav_pattern.png');
+		background-size: 80px;
+        width: 105% !important;
+        margin:0px;
+        left: 10px;
+        height: auto!important;
+        
+		/*box-shadow: 1px 1px 11px 3px #003d5f;*/
+		 
+	}
+    
+    
+    .myNavbarOnScroll{
+    position: absolute;
+    background-color: rgba(255,255,255,0.9);
+    /* background-image: url('../images/nav_pattern.png'); */
+    /* background-size: 96px; */
+    left: 2%;
+    width: 105%;
+    top: 70px;
+    height: 70px !important;
+    /* box-shadow: 1px 1px 11px 3px #003d5f;*/
+    
+}
+
+	.container-fluid{
+			
+			background-color: #fff !important;
+			padding:0px;
+			height: 80px;
+			
+		}
+
+	.container-fluid button{
+		position: absolute;
+        top: 0px;
+        left: 85%;
+	}
+
+
+ .ZgapNoScroll{
+            position:absolute;			
+            left:26.65%;
+            border-bottom: 96px solid #198AC9;
+            border-left: 49px solid rgba(0,0,0,0);            
+			height: 0;
+			width: 10%;
+            display: none;
+			
+            
+    }
+    
+    .ZgapOnScroll{
+            position:absolute;			
+            left:26.65%;
+            border-bottom: 96px solid #198AC9;
+            border-left: 49px solid rgba(0,0,0,0);            
+			height: 0;
+			width: 10%;
+            display: block;
+			
+            
+    }
+.nav_header_leftNoScroll{
+			border-top: 80px solid #fff;
+			border-right: 30px solid transparent;
+			height: 0;
+			width: 28%;
+   		}
+
+   		.navbar-toggle{
+		margin-top: 36px;
+	}
+	}

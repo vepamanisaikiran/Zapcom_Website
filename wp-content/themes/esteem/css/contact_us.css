@@ -1,0 +1,400 @@
+
+
+
+	@media only screen and (min-width: 768px) {
+			.career-form-div{
+				display: table;
+  				margin: auto;
+			}
+            
+            #our_culture .slider_container{
+                width:50%;
+            }
+            
+            #zapcom_culture {
+                padding: 20px;
+                text-align: center;
+            }
+            
+            #zapcom_culture div[class*="col-"]{
+                height: 100%;
+                padding:0px;
+                text-align: center;
+/*                display: flex;*/
+            }
+            #zapcom_culture .culture_image{
+                margin: 0px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 315px;
+                width: 100%;
+                border-top:1px solid white;
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+/*                border-bottom: 3px solid white;*/
+                background-position: 100%;
+            }
+            #zapcom_culture h3.culture_question{
+                font-size: 40px;
+                margin-top: 100px;
+                width: 100%;
+            }
+            #zapcom_culture p.culture_answer{
+               font-family: 'montserratlight';
+                font-size: 16px;
+                /* margin-top: 70px; */
+               width: 255px;
+                height: 75px;
+                padding: 0px 15px;
+            }
+            
+            #menu_career div#career_menu_links{
+                height: 45px;
+                /*padding-top: 15px;*/
+                /*opacity: 0.7;*/
+                /*background-color: #fff;*/
+                /*margin-top: 8px;*/
+                bottom: 25px;
+                
+            }
+			
+			
+			
+			
+			#menu_career div#career_menu_button{
+            /*background-color: #2196f3;*/
+            /*background-color: #01c3b1;*/
+            /*background-color: #248dd4;*/
+            /*width: 240px;*/
+            /*height: 63px;*/
+            /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+            /*border-radius: 50%;*/
+            color: #fff;
+            /*font-size: 25px;*/
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            bottom: 70px;
+            /*line-height: 2.5;*/
+        }
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+
+         @media only screen and (max-width: 767px){
+             #we_are_hiring{
+                display: none;
+             }
+             
+            .headerBannnerwords{
+                top: 35%;
+                padding: 0 25px;
+            }
+            .headerBannnerwords span{
+                font-size: 30px;
+            }
+             
+            #hor_line_culture {
+                 height: 10px; 
+                 left: 25%; 
+                 position: initial;
+                 top: 48px; 
+            }
+             
+            #zapcom_culture h2 {
+                 position: initial; 
+                font-family: 'montserratbold' !important;
+            }
+
+            #our_culture .slider_container{
+                width:85%;
+            }
+            
+            #our_culture h2 {
+                padding-top: 16vmin;
+            }
+             
+             #our_people h2 {
+                 padding-top: 16vmin;
+             }
+            
+            #zapcom_culture {
+                padding: 20px 30px;
+                position: relative;
+                z-index: -3;
+                text-align: center;
+            }
+            
+             #zapcom_culture ul {
+                 padding-top: 0px !important;
+             }
+             
+            #zapcom_culture div[class*="col-"]{
+/*                height: 300px;*/
+                padding:0px;
+            }
+            #zapcom_culture .culture_image{
+                margin: 0px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 300px;
+                width: 100%;
+                background-position: 100%;
+            }
+            #zapcom_culture h3.culture_question{
+                font-size: 40px;
+                margin-top: 40px;
+            }
+            #zapcom_culture p.culture_answer{
+                font-size: 20px;
+                /*margin-top: 110px;*/
+                padding: 0px 15px;
+            }
+            
+            div.perk-pos .carr-benft{
+            width: 50%;
+            }
+             
+            .perks-benefits p.zap_body {
+                font-size: 16px;
+                margin: 20px;
+            }
+            
+            #menu_career div#career_menu_links{
+                padding-top: 0px;
+                /*opacity: 0.7;*/
+                /*background-color: #fff;*/
+                border-radius: 20px;
+                bottom: 13px;
+            }
+            #menu_career div#career_menu_button{
+                margin-top: 20px;
+				 color: #fff;
+            /*font-size: 25px;*/
+            cursor: pointer;
+            position: absolute;
+            right: 0px;
+            bottom: 200px;
+				
+            }
+            
+            #menu_career div#career_menu_links a{
+                font-size: 16px;
+            }
+            #menu_career div#career_menu_links a:hover{
+                font-size: 18px;
+            }
+            
+            .career-form-div{
+				border-right: none;
+			}
+             
+             .perks, .perk-pos {
+                height: 650px;
+            }
+        }
+
+        #cul-img_1{
+/*            display: none;*/
+        }
+
+
+        #cul-img_1{
+            -webkit-animation-name: appear; /* Chrome, Safari, Opera */
+            -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+            animation-name: appear;
+            animation-duration: 4s;
+        }
+
+    #cul-img_2{
+            -webkit-animation-name: appear; /* Chrome, Safari, Opera */
+            -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
+            animation-name: appear;
+            animation-duration: 8s;
+        }
+    
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes appear {
+            from {display: none;}
+            to {display: block;}
+        }
+
+        /* Standard syntax */
+        @keyframes appear {
+            from {display: none;}
+            to {display: block;}
+        }
+
+@media only screen and (min-width:768px) and (max-width:1000px){
+  
+
+    #menu_career div#career_menu_button {
+    /* background-color: #2196f3; */
+    /* background-color: #01c3b1; */
+    /* background-color: #248dd4; */
+    /* width: 240px; */
+    /* height: 63px; */
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    /* border-radius: 50%; */
+    color: #fff;
+    /* font-size: 25px; */
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 80px;
+    /* line-height: 2.5; */
+}
+    
+   
+    
+}
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+      
+        
+
+		@media screen and (max-width: 767px){
+            
+         
+            
+            
+            .mission .mission_points {
+                font-size: 17px !important; 
+                margin-top: 10px !important; 
+                 top: 0px !important; 
+            }
+            
+          
+            
+		}
+
+
+
+
+	
+
+
+
+
+		.mission{
+			background-color: #fff;
+            text-align: center;
+		}
+		.mission .zap_h1,.leadershipsec .zap_h1{
+			margin-bottom: 0px !important;
+		}
+
+		
+		.mission span p{
+			/*font-size: 3vmin;*/
+			margin: 12px 40px;
+		}
+		
+		.mission .mission_points{
+            font-size: 19px;
+            margin-top: 10px;
+            top: 65px;
+            color: #003d5f;
+/*            position: relative; // add this with carousel*/
+		}
+		.mission .mission_images{
+			height: 150px;
+		}
+
+
+		
+@media only screen  and (min-width:1000px){
+    .mission{
+		margin-top:20vh;
+	}
+    
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1000px){
+    .mission{
+		margin-top:20vh;
+	}
+    
+}
+
+@media only screen and (max-width: 800px){
+  .mission{
+		margin-top:20vh;
+	}
+}
+
+
+
+@media only screen and (min-width: 1300px){
+  .mission{
+		margin-top:22vh;
+	}
+        }
+
+@media only screen and (max-width: 767px){
+        
+     .mission{
+		margin-top:15vh;
+	}
+
+
+}

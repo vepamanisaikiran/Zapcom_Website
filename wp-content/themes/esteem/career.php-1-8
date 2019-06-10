@@ -1,0 +1,489 @@
+<?php 
+/*
+Template Name: Careers   
+ */?>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Careers | Zapcom</title>
+
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<!---meta name="author" content="Design by - GIJEESH M M (gijeesh@channelsoftech.com)"---->
+
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style-1.css"> 
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/media-query.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
+
+<!--<link href="css/responsive-tabs.css" rel="stylesheet" type="text/css" media="all" />-->
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/jquery.bxslider.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/jss/js/responsive-tabs.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && 
+
+location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+
+<link href="<?php bloginfo('template_url'); ?>/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo('template_url'); ?>/SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo('template_url'); ?>/SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<?php
+/**
+ * This hook is important for wordpress plugins and other many things
+ */
+wp_head();
+?>
+
+<style>
+	
+	/*.img-dwn {
+  margin: 0 auto;
+  width: 100px;
+  position: fixed;
+  bottom: 9px;
+  right: 45%;
+  z-index: -9999;
+  top: auto;
+}*/
+
+@-moz-document url-prefix() {
+.img-dwn {
+   bottom: 0px;
+ }
+}
+	</style>
+    
+</head>
+
+<body <?php body_class(); ?>>
+	<div id="" class="">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="inner-wrap">
+				<div class="hgroup-wrap clearfix">
+					<div class="site-branding">
+						<?php if( ( of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'logo_only' ) && of_get_option( 'esteem_header_logo_image', '' ) != '' ) {
+						?>
+							<div class="header-logo-image">
+								<a rel="home" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<img alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" src="<?php echo of_get_option( 'esteem_header_logo_image', '' ); ?>">
+	</a>
+							</div><!-- .header-logo-image -->
+						<?php }
+						if( of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'esteem_show_header_logo_text', 'text_only' ) == 'text_only' ) {
+						?>
+							<div class="header-text">
+								<h1 id="site-title">
+										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+											<?php bloginfo( 'name' ); ?>
+										</a>
+									</h1>
+								<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+							</div><!-- .header-text -->
+						<?php } ?>
+					</div><!-- .site-branding -->
+					<div class="hgroup-wrap-right">
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<h3 class="menu-toggle"></h3>
+							<div class="nav-menu clearfix">
+								<?php
+									if ( has_nav_menu( 'primary' ) ) {
+											wp_nav_menu( array( 'theme_location' => 'primary',
+																'container' => false
+																 ) );
+									}
+									else {
+											wp_page_menu();
+									}
+								?>
+							</div><!-- .nav-menu -->
+						</nav><!-- #site-description -->
+						<!--<i class="icon-search search-top"></i>
+						<div class="search-form-top">
+							<?php //get_search_form(); ?>
+						</div>--><!-- .search-form-top -->
+					</div><!-- .hgroup-wrap-right -->
+				</div><!-- .hgroup-wrap -->
+			</div><!-- .inner-wrap -->
+			<?php //esteem_render_header_image(); ?>
+
+			<?php
+   		
+		   	if( !( is_front_page()) ) { ?>
+			<!--	<section class="page-title-bar clearfix">
+					<div class="inner-wrap">
+						<?php //if( '' != esteem_header_title() ) { ?>
+							<div class="page-title-wrap"><h1><?php //echo esteem_header_title(); ?></h1></div>
+						<?php //} ?>
+						<?php //if( function_exists( 'esteem_breadcrumb' ) ) { esteem_breadcrumb(); } ?>
+					</div>
+				</section>-->
+			<?php } ?>
+		</header><!-- #masthead -->
+		<div id="" class="">
+        <section class="banner">
+<?php 
+ global $wpdb;
+ $sql = "SELECT * FROM `wp_career_career_banner`";
+ $sqll=$wpdb->get_results($sql);
+ ?>
+ 
+ <?php 
+foreach($sqll as $post_name){
+
+?>
+
+ <div class="banner-img-pos"> <img src="http://wpdemo.superbcart.com/magnum-honda//wp-admin/<?php echo $post_name ->career_banner ?>"/> </div>
+<div class="container">
+<div class="banner-cnt career-b"> 
+  <p> Work at Zapcom Group </p>
+   </div>
+
+</div>
+
+</section> <!--- banner section ---->
+
+<section class="section-3" id="whoweare">
+<div class="container">
+<h3 class="cnt-hd-sec"><?php echo $post_name ->group_detail ?> </h3>
+
+<p class="cnt-sec"> <?php echo $post_name ->group_paragraph ?> </p>
+<?php } ?>
+<h2 class="head-sec"> What is it like to work at Zapcom? </h2>
+
+<div class="snaps-contr">
+ <div class="col-md-6 rt-img-cr"> 
+ <div class="snap-div-cr"> <img src="<?php bloginfo('template_directory'); ?>/images/career-1.jpg"> </div>
+<div class="snap-div-cr"> <img src="<?php bloginfo('template_directory'); ?>/images/career-4.jpg"> </div>
+<div class="snap-div-cr"> <img src="<?php bloginfo('template_directory'); ?>/images/career-2.jpg"> </div>
+<div class="snap-div-cr"> <img src="<?php bloginfo('template_directory'); ?>/images/career-3.jpg"> </div>
+</div>
+ <div class="col-md-6 rt-img-cr" > 
+<div class="snap-div-cr" style="width: 87%;text-align: left;"> <img src="<?php bloginfo('template_directory'); ?>/images/career-5.jpg"> </div>
+</div>
+
+</div>
+
+<h2 class="head-sec cr-bnft"> The Perks and Benefits </h2>
+
+<p class="cnt-sec" style="float: left;"> Our team competes at the highest level. How do we keep the best talent happy? At ZapCom, we nurture a uniquely engaging workplace that delivers. we work hard to play harder. That's where the perks of work come into play. Our benefits make life sweeter. For starters, you'll enjoy:  </p>
+
+<div class="static-tab-whowr">
+<div class="carr-benft"> 
+<div class="img-stat"> <span class="crpage benfit-1"> </span> </div>
+ <p> Medical Coverage for Self and dependents  </p>  
+  </div>
+<div class="carr-benft"> 
+<div class="img-stat"> <span class="crpage benfit-2"> </span> </div>
+ <p> Medical Coverage for Self and dependents  </p>  
+  </div>
+
+<div class="carr-benft"> 
+<div class="img-stat"> <span class="crpage benfit-3"> </span> </div>
+ <p> Medical Coverage for Self and dependents </p> 
+  </div>
+<div class="carr-benft"> 
+<div class="img-stat"> <span class="crpage benfit-4"> </span> </div>
+ <p> Medical Coverage for Self and dependents </p> 
+  </div>
+  <div class="carr-benft"> 
+<div class="img-stat"> <span class="crpage benfit-5"> </span> </div>
+ <p> Medical Coverage for Self and dependents </p> 
+  </div>
+  <div class="carr-benft"> 
+<div class="img-stat"> <span class="crpage benfit-5"> </span> </div>
+ <p> Medical Coverage for Self and dependents </p> 
+  </div>
+  
+</div>
+
+
+</div>
+
+</section> <!---  section 3 ---->
+
+
+<section class="section-2 career-tab"> 
+<div class="container">
+<h2 class="head-sec cr-bnft" style="margin-top: 0;"> Open Positions </h2>
+
+<div id="TabbedPanels1" class="TabbedPanels carrer-tabpanl">
+  <ul class="TabbedPanelsTabGroup">
+    <li class="TabbedPanelsTab" tabindex="0">Marketing</li>
+    <li class="TabbedPanelsTab" tabindex="0">Design</li>
+    <li class="TabbedPanelsTab" tabindex="0">Account Management</li>
+    <li class="TabbedPanelsTab" tabindex="0">Finance & office</li>
+    <li class="TabbedPanelsTab" tabindex="0">Development</li>
+    <li class="TabbedPanelsTab" tabindex="0">Projects</li>
+  </ul>
+  <div class="TabbedPanelsContentGroup cnt-sec tab-cnt-cr">
+    <div class="TabbedPanelsContent">
+    
+    <div id="Accordion1" class="Accordion" tabindex="0">
+      <div class="AccordionPanel">
+     
+      
+        <div class="AccordionPanelTab tabcnt-hd-cr">  Digital Marketing Manager (SEM) </div>
+        <div class="AccordionPanelContent">
+            <?php
+	  global $wpdb;
+	  $sql="select * from wp_career_job_description where position_name='Marketing' and desination_name='Digital Marketing Manager (SEM)'";
+	  //echo $sql;
+	  $sql1=$wpdb->get_results($sql);
+	  ?><?php
+foreach($sql1 as $post_name){
+?> <p> <?php echo $post_name->job_description ?> <?php 
+} ?></p>
+     <div> <button class="btn btn-apply">Apply Now </button> </div> 
+       </div>
+       
+      </div>
+      
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab tabcnt-hd-cr">Fashion Editor</div>
+        <div class="AccordionPanelContent">
+          <p>      <?php
+	  global $wpdb;
+	  $sql="select * from wp_career_job_description where position_name='Marketing' and desination_name='Fashion Editor'";
+	  //echo $sql;
+	  $sql1=$wpdb->get_results($sql);
+	  ?><?php
+foreach($sql1 as $post_name){
+?> <p> <?php echo $post_name->job_description ?> <?php 
+} ?></p></p>
+      
+      <div> <button class="btn btn-apply">Apply Now </button> </div> 
+        
+        </div>
+      </div>
+    </div>
+    
+    
+  
+     
+    </div>
+    
+    <div class="TabbedPanelsContent"> <h3 class="tabcnt-hd-cr"> Design </h3>
+     <p>      <?php
+	  global $wpdb;
+	  $sql="select * from wp_career_job_description where position_name='Design' and desination_name='Website Designer'";
+	  //echo $sql;
+	  $sql1=$wpdb->get_results($sql);
+	  ?><?php
+foreach($sql1 as $post_name){
+?> <p> <?php echo $post_name->job_description ?> <?php 
+} ?></p></p>
+<div> <button class="btn btn-apply">Apply Now </button> </div> 
+</div>
+      
+    <div class="TabbedPanelsContent"> <h3 class="tabcnt-hd-cr"> Account Management </h3>
+    <p>       <?php
+	  global $wpdb;
+	  $sql="select * from wp_career_job_description where position_name='Account Management' and desination_name='Account Management'";
+	  //echo $sql;
+	  $sql1=$wpdb->get_results($sql);
+	  ?><?php
+foreach($sql1 as $post_name){
+?> <p> <?php echo $post_name->job_description ?> <?php 
+} ?></p></p><div> <button class="btn btn-apply">Apply Now </button> </div> 
+      </div>
+      
+    <div class="TabbedPanelsContent"> <h3 class="tabcnt-hd-cr"> Finance & Office </h3>
+   <p>       <?php
+	  global $wpdb;
+	  $sql="select * from wp_career_job_description where position_name='Finance & Office' and desination_name='Finance & Office'";
+	  //echo $sql;
+	  $sql1=$wpdb->get_results($sql);
+	  ?><?php
+foreach($sql1 as $post_name){
+?> <p> <?php echo $post_name->job_description ?> <?php 
+} ?></p></p><div> <button class="btn btn-apply">Apply Now </button> </div> 
+      </div>
+      
+    <div class="TabbedPanelsContent"> <h3 class="tabcnt-hd-cr"> Development </h3>
+    <p>       <?php
+	  global $wpdb;
+	  $sql="select * from wp_career_job_description where position_name='Development' and desination_name='Development'";
+	  //echo $sql;
+	  $sql1=$wpdb->get_results($sql);
+	  ?><?php
+foreach($sql1 as $post_name){
+?> <p> <?php echo $post_name->job_description ?> <?php 
+} ?></p></p><div> <button class="btn btn-apply">Apply Now </button> </div> 
+      </div>
+      
+    <div class="TabbedPanelsContent"> <h3 class="tabcnt-hd-cr"> Projects</h3>
+     <p>       <?php
+	  global $wpdb;
+	  $sql="select * from wp_career_job_description where position_name='Projects' and desination_name='Projects'";
+	  //echo $sql;
+	  $sql1=$wpdb->get_results($sql);
+	  ?><?php
+foreach($sql1 as $post_name){
+?> <p> <?php echo $post_name->job_description ?> <?php 
+} ?></p></p><div> <button class="btn btn-apply">Apply Now </button> </div> 
+      </div>
+    
+  </div>
+</div>
+
+
+</div>
+</section> <!---  section-2 career-tab---->
+
+<section class="section-3">
+<div class="container">
+<h3 class="cnt-hd-sec"> When you join a startup you'll have the opportunity to have unparallel impact. <br> <span style="color:#0E0202;">You'll have a say in product, culture and company direction from day one. </span> </h3>
+
+<div class="static-tab-whowr">
+<div class="whowr-tab1"> 
+<div class="img-stat"> <span class="career-img img-dwn-1"> </span> </div>
+
+ <p> Work with the smartest, most innovative people in the world to solve the hardest problem.  </p>  
+  </div>
+<div class="whowr-tab1"> 
+<div class="img-stat"> <span class="career-img img-dwn-2"> </span> </div>
+ <p> You will matter - Your contribution will be felt. </p>  
+  </div>
+<div class="whowr-tab1"> 
+<div class="img-stat"> <span class="career-img img-dwn-3"> </span> </div>
+ <p> You will have fun(lots of it), and you'll love what you do.</p>  
+  </div>
+</div>
+
+
+</div>
+</section>
+
+
+<section class="section-whowr-cnt"> 
+<div class="container">
+
+<h2 class="head-sec"> Continue Exploring </h2>
+<h2 class="sec-two">What we do </h2>
+
+<div class="whowr-tab1 cnt-exp"> <h4> Product and IP Building </h4>
+ <p> Donec dignissim orci rhoncus nibh cursus, id eleifend est luctus.   </p>  <a href="#"> View More </a>
+  </div>
+  
+  <div class="whowr-tab1 cnt-exp"> <h4> Standing up Start-up Ideas </h4>
+ <p> Donec dignissim orci rhoncus nibh cursus, id eleifend est luctus.  </p>  <a href="#"> View More </a>
+  </div>
+  <div class="whowr-tab1 cnt-exp"> <h4> Product Engineering Services </h4>
+ <p> Donec dignissim orci rhoncus nibh cursus, id eleifend est luctus.   </p>  <a href="#"> View More </a>
+  </div>
+
+</div>
+
+
+</section> <!---  section 2 ---->
+
+ <!---  section 3 ---->
+
+
+<section class="footer">
+<div class="container">
+
+<div class="fot-1">
+<p> <span class="call-spt"> </span> </p>
+<p> CALL US <br> INDIA: +91-80-67232300  <br>  USA: +1-925-350-7003 </p>
+</div>
+
+<div class="fot-1">
+<div class="center-fot">
+<p> <span class="mail-spt"> </span> </p>
+<p style="margin: 11px 0 0 0;"> MAIL US <br> info@zapcg.com </p>
+</div>
+</div>
+
+<div class="fot-1 shr">
+<div class="center-fot">
+<p> <span class="face-spt"> </span>
+<span class="tweet-spt"> </span>
+<span class="gogl-spt"> </span>
+<span class="linkin-spt"> </span>
+ </p>
+</div>
+</div>
+
+</div>
+</section>   <!---  section footer ---->
+
+<section class="copy-rt">
+<div class="container">
+
+<div class="copy-cnt">  © 2015 Zapcom Group. All Right Reserved  |  Privacy Policy </div>
+
+</div>
+</section>
+
+
+</div> <!-- wrapper -->
+
+
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+var Accordion1 = new Spry.Widget.Accordion("Accordion1", { useFixedPanelHeights: false });
+</script>
+
+
+
+
+<script src="js/bootstrap.min.js"> </script>
+<script src="js/jquery.min.js"> </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"> </script>
+
+<script>
+$(document).ready(function(){
+  $('.slider4').bxSlider({
+    slideWidth: 249,
+    minSlides: 2,
+    maxSlides: 4,
+    moveSlides: 1,
+    slideMargin: 61,
+	pager: false
+  });
+  });
+</script>
+
+<script>
+	 $('.slider4').Slider4({
+  auto: false,
+  autoControls: true
+  
+
+});
+  </script>
+
+
+
+
+</body>
+</html>
